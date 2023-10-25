@@ -1,0 +1,32 @@
+/* NavBar*/
+nav {
+    position: sticky;           /*position: fixed -> recomendado por w3schools para fixed nav y sticky nav*/ 
+    top: 0px;
+    left: 0px;
+    display: flex;
+    background-color: var(--bg-color);
+    align-items: center;
+    justify-content: center; /* antes, space-between*/
+    padding: 20px 40px;
+}
+
+nav h1 {
+    color: black;    /* antes, var(--primary-color);*/
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;    
+    gap: 40px;
+}  
+
+nav ul a {
+    color: var(--primary-color);
+} 
+
+.sticky 
+{
+  position: fixed;
+  top: 0;
+  width: 100%;
+} 

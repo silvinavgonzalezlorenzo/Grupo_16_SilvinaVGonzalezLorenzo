@@ -1,0 +1,35 @@
+body {
+    color: rgb(251, 96, 13);
+}
+
+h2 {
+    font-size: 24px;
+
+}
+.subtitulo {
+text-align: center;
+text-decoration: underline;
+}
+.imagen-container {
+display: flex;
+justify-content: center;
+}
+.skill-img {
+max-width: 100%; 
+height: auto;    
+}
+.descripcion {
+
+
+color: hsla(46, 90%, 49%, 0.95); 
+/
+}
+.image-row {
+display: flex;
+justify-content: space-around;
+}
+
+.image-text {
+text-align: center;
+margin: 0 10px;
+}

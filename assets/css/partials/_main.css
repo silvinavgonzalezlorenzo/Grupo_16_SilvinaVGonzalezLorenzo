@@ -1,0 +1,35 @@
+.principal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin: auto;
+}
+
+imagen {
+    height: 200px;
+    width: 300px;
+}
+
+.biografia {
+    width: 450px;
+}
+
+.skill{
+    text-align: center;
+    margin: auto;
+}
+
+.skill-header {
+    margin: 10px 10px 30px 10px;
+} 
+
+.skill-img {
+    width: 200px;
+    height: 300px;
+    background-color: #ffff;
+    border-radius: 11px;
+    padding: 20px;
+    margin: 10px;
+}
+

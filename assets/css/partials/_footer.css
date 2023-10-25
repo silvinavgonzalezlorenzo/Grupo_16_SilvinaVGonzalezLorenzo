@@ -1,0 +1,20 @@
+footer {
+    background-color: var(--bg-color);
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+}
+
+footer ul li a {
+    color: var(--primary-color);
+    margin: 1px 0px; /*Espacio e/ íconos: margen 1 arriba y abajo, y 0 a la derecha e izq.*/
+    font-size: 20px; /*20px es tamaño de los íconos*/
+    margin: 0;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center; 
+}  
