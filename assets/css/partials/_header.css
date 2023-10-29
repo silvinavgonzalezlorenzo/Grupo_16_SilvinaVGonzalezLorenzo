@@ -1,6 +1,6 @@
 /* NavBar*/
 nav {
-    position: sticky;           /*position: fixed -> recomendado por w3schools para fixed nav y sticky nav*/ 
+    position: sticky;           
     top: 0px;
     left: 0px;
     display: flex;
@@ -11,7 +11,7 @@ nav {
 }
 
 nav h1 {
-    color: black;    /* antes, var(--primary-color);*/
+    color: brown; /* antes, var(--primary-color);*/
 }
 
 nav ul {
@@ -24,7 +24,13 @@ nav ul a {
     color: var(--primary-color);
 } 
 
-.sticky 
+.texto-ícono{ /*NEW*/
+    color: orangered; /*DARKBLUE: rgb(0, 0, 139)*/
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.sticky /*position: fixed -> recomendado por w3schools para fixed nav y sticky nav*/ 
 {
   position: fixed;
   top: 0;
