@@ -12,12 +12,18 @@ html{
 
 h2{
     text-align: center;
+    font: blue;
+}  
+
+h3{
+    text-align: center;
+    font: blue;
 }  
 
 .button{
     text-align: center; 
     display:block;
-    color: blue; 
+    color:BROWN; /*PRIMARY BROWN: rgb(165,42,42); ORANGE: rgb(255, 165, 0); "CLASSIC" BROWN:rgb(150, 75, 0)*/ 
 } 
 /* { 
     box-sizing: border-box;

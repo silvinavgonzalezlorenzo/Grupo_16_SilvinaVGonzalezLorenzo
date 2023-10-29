@@ -1,0 +1,46 @@
+body{
+    color: darkblue;
+}
+
+h2{
+    font-size: 24px;
+}
+
+.subtitulo{
+    text-align: center;
+}
+
+/*.imagen-row-container{
+    display: flex;
+    justify-content: space-around;
+    text-align:
+}*/
+
+.imagen-container{ 
+    display: flex;
+    justify-content: center;
+}
+
+.skill-img{  /*seis imágenes en skills.html*/
+    max-width: 100%; 
+    height: auto;    
+}
+
+/*.image-caption{
+    color: darkblue;
+}*/
+
+.descripcion{
+    color: darkblue; /*darkblue: rgb(0, 0, 139)*/
+}
+
+.image-row{
+    display: flex; 
+    justify-content: space-around;
+}
+
+.image-text{    
+    text-align: center;
+    margin: 0 10px;
+}
+

@@ -1,4 +1,21 @@
-.principal {
+
+/*.i{
+    color:brown; /*PRIMARY BROWN: rgb(165,42,42); ORANGE: rgb(255, 165, 0); "CLASSIC" BROWN:rgb(150, 75, 0)*/
+    /*font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}*/
+
+/*.texto-ícono{
+    color: orangered; /*DARKBLUE: rgb(0, 0, 139)
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}*/
+
+.biografia{
+    color: darkblue; /*NEW: darkblue: rgb(0, 0, 139)*/
+    width: 450px;
+}
+
+.principal{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6,13 +23,14 @@
   margin: auto;
 }
 
-imagen {
-    height: 200px;
-    width: 300px;
+footer{
+    color: orangered; /*DARKBLUE: rgb(0, 0, 139)*/ 
+    text-align: center;
 }
 
-.biografia {
-    width: 450px;
+imagen{
+    height: 200px;
+    width: 300px;
 }
 
 .skill{
@@ -20,11 +38,11 @@ imagen {
     margin: auto;
 }
 
-.skill-header {
+.skill-header{
     margin: 10px 10px 30px 10px;
 } 
 
-.skill-img {
+.skill-img{
     width: 200px;
     height: 300px;
     background-color: #ffff;
@@ -32,4 +50,6 @@ imagen {
     padding: 20px;
     margin: 10px;
 }
-
+.formulario_principal{
+    color: darkblue; /*DARKBLUE: rgb(0, 0, 139)*/ 
+} 
