@@ -18,3 +18,8 @@ footer ul {
     gap: 10px;
     justify-content: center; 
 }  
+
+.texto-footer{
+    color: orangered; /*DARKBLUE: rgb(0, 0, 139)*/ 
+    text-align: center;
+}

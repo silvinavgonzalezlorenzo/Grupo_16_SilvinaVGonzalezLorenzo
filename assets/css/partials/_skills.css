@@ -13,7 +13,6 @@ h2{
 /*.imagen-row-container{
     display: flex;
     justify-content: space-around;
-    text-align:
 }*/
 
 .imagen-container{ 
@@ -26,12 +25,9 @@ h2{
     height: auto;    
 }
 
-/*.image-caption{
-    color: darkblue;
-}*/
-
 .descripcion{
-    color: darkblue; /*darkblue: rgb(0, 0, 139)*/
+    color: orangered; /*darkblue: rgb(0, 0, 139)*/
+    justify-content: center; 
 }
 
 .image-row{

@@ -10,11 +10,6 @@
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }*/
 
-.biografia{
-    color: darkblue; /*NEW: darkblue: rgb(0, 0, 139)*/
-    width: 450px;
-}
-
 .principal{
   display: flex;
   align-items: center;
@@ -23,14 +18,14 @@
   margin: auto;
 }
 
-footer{
-    color: orangered; /*DARKBLUE: rgb(0, 0, 139)*/ 
-    text-align: center;
-}
-
 imagen{
     height: 200px;
     width: 300px;
+}
+
+.biografia{
+    color: darkblue; /*NEW: darkblue: rgb(0, 0, 139)*/
+    width: 450px;
 }
 
 .skill{
@@ -50,6 +45,7 @@ imagen{
     padding: 20px;
     margin: 10px;
 }
+/* NEW
 .formulario_principal{
-    color: darkblue; /*DARKBLUE: rgb(0, 0, 139)*/ 
-} 
+    color: darkblue; /*DARKBLUE: rgb(0, 0, 139)
+}*/ 
