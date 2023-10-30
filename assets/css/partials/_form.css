@@ -29,7 +29,8 @@
     padding: 40px;
     display: grid;
     border-radius: 5px;
-    background-color: var(--primary-color);
+    background-color: orange; /*Background formulario*/
+    text-align: center;
     margin: auto;
 }
 
@@ -53,7 +54,7 @@
 
 .formulario__input { /*cambia los espacios a rellenar*/
     width: 100%;
-    background: #fff; /*relleno del imput*/
+    background: #fff; /*relleno del input*/
     border: 3px solid transparent;
     border-radius: 3px;
     /*height y line-heigth es para que el texto quede centrado*/
@@ -82,10 +83,10 @@
  display: block;   
 }
 
-/*ICONO X configuracion*/
+/*ICONO X configuración*/
 .formulario__validacion-estado {
     position: absolute;
-    right: 10px; /*coloca al icono dentro del input de der a izq*/
+    right: 10px; /*coloca al ícono dentro del input de der a izq*/
     bottom: 15px;
     z-index: 100;
     font-size: 16px;
@@ -127,7 +128,7 @@
     line-height: 45px;
     width: 30%;
     background: orangered;
-    color: #000;
+    color: darkblue;
     font-weight: bold;
     border: none;
     border-radius: 3px;
