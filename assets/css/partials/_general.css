@@ -13,10 +13,7 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    color: var(--secondary-color);
-}
-
 body {
     font-family: var(--font-family);
+    background-color: white;
 }

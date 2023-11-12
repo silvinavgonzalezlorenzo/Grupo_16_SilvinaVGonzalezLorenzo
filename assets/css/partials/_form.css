@@ -1,37 +1,56 @@
-.ubicacion__page {
+.contenedor-mapa { /*contenedor del mapa*/
     /*background-color: #1ed12d;*/
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    border: 10px;
+    max-width: 600px; 
+    width: 100%;
+    padding-top: 56,25%; /*conserva la relación 16:9*/
+    position: relative; 
+    margin: 0 auto; /*centrado horizontal*/
+    /*justify-content: center;*/
+    /*flex-direction: column;*/
+    border: 20px;
     align-items: center;
 }
 
 .iframe-form {
-    height: 300px;
-    width: 500px;
-    margin: 20px;
+    height: 100%;
+    width: 100%;
+    top: 0; 
+    left: 0; 
+    justify-content: center;
 }
 
-.ubicacion__page h2 {
+.contenedor-mapa h2,
+.formulario__principal h2,
+.contenedor-mapa p {
     text-align: center;
-    margin: 10px;
+    margin: 10px; 
+    padding-top: 20px; /*separación desde header hasta h2*/
 }
 
-.formulario__principal h2 {
-    text-align: center;
-    margin: 10px;
+.contenedor-mapa p { /*igual que el caption de skills.css*/
+    color: orangered; /*antes: darkblue;*/
+    font-size: 14px; 
+    padding-top: 10px;
 }
 
-.formulario__principal {
+.formulario__principal { /*¡Escríbeme 24 x 7!*/
     max-width: 600px;
     width: 100%;
-    padding: 40px;
+    padding: 30px;
+    padding-top: 10px; /*sobreescribe la propiedad anterior: sólo "top"*/
     display: grid;
     border-radius: 5px;
-    background-color: orange; /*Background formulario*/
+    background-color: rgb(240, 240, 201); /*Background formulario*/
     text-align: center;
-    margin: auto;
+    margin: auto; /*15 arriba, 5 abajo, 0 el resto. Antes: auto;*/
+    margin-bottom: 5%; /*separación con el footer*/
+}
+
+.formulario__principal p { /*Te responderé en el mismo día*/
+    color: orangered; /*antes: darkblue;*/
+    font-size: 16px; 
+    padding-bottom: 10px; /*para separar desde este punto de ref. hacia abajo*/
+    /*font-weight: bold;*/
 }
 
 .formulario {
@@ -57,18 +76,18 @@
     background: #fff; /*relleno del input*/
     border: 3px solid transparent;
     border-radius: 3px;
-    /*height y line-heigth es para que el texto quede centrado*/
+    /*height y line-height es para que el texto quede centrado*/
     height: 45px;
     line-height: 45px;
     padding: 0 40px 0 10px; /*arriba derecha abajo izquierda*/
     transition: .3s ease all; /*AVERIGUAR QUE ES??*/
 }
 
-/*transicion para el click*/
+/*Transición cuando se hace click sobre campos a rellenar*/
 .formulario__input:focus {
-    border: 3px solid orangered;
+    border: 3px solid orangered; /*naranja blur para marcar posición -> ok*/
     outline: none; /*quita un sobreborde del navegador*/
-    box-shadow: 3px 0px 30px brown; /*sombreado que indica donde estoy posicionada*/   
+    box-shadow: 3px 0px 30px brown; /*marrón blur para marcar posición -> atención*/   
 }
 
 /*ACCESO AL ERROR (mensajes de aviso)*/
@@ -86,7 +105,7 @@
 /*ICONO X configuración*/
 .formulario__validacion-estado {
     position: absolute;
-    right: 10px; /*coloca al ícono dentro del input de der a izq*/
+    right: 10px; /*coloca el ícono dentro del input de der a izq*/
     bottom: 15px;
     z-index: 100;
     font-size: 16px;
@@ -102,7 +121,7 @@
 .formulario__mensaje {
     height: 45px;
     line-height: 45px;
-    background-color: #f66060;
+    background-color: pink; /*#f66060;*/
     padding: 0 15px;
     border-radius: 3px;
     display: none; /*msj oculto para que aparezca en ciertos casos*/
@@ -126,18 +145,20 @@
 .formulario__btn {
     height: 45px;
     line-height: 45px;
-    width: 30%;
-    background: orangered;
-    color: darkblue;
+    width: 20%; /*New 08.11.23*/ 
+    background-color: white; /*New 08.11.23. Antes: orange*/
+    color: orangered; /*Nw 08.11.23*/
+    font-size: 16px;
     font-weight: bold;
     border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: .1s ease all;
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
 }
 
 .formulario__btn:hover {
-    box-shadow: 3px 0px 30px brown ;
+    background-color: brown;
+    color: yellow;
 }
 
 .formulario__mensaje-exito {
@@ -161,16 +182,17 @@
 }
 
 .formulario__grupo-incorrecto .formulario__validacion-estado {
-    color: #bb2929;
+    color: #c63636;
     opacity: 1;
 }
 
 .formulario__grupo-incorrecto .formulario__input {
     border: 3px solid #bb2929;
 }
-/*mediaqueries*/
 
-@media (max-width: 800px) {
+/*Responsive - media queries*/
+/*MOBILE - small devices*/
+@media (max-width: 768px) {
         .formulario { 
             grid-template-columns: 1fr;
         }
@@ -182,3 +204,5 @@
         width: 100%;
     }
 }
+/*Nota: el 09.11.23 aprendí sobre MOBILE FIRST (golden rule developer). 
+Los parámetros arriba descriptos son anteriores.*/ 

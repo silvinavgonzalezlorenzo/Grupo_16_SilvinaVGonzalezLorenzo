@@ -1,93 +1,322 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
- 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grupo_16_SouthernGlory</title>
-    <script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../assets/css/styles.css"> <!--"./assets/css/styles.css">--> <!--./assets/css/styles.css">-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <script
+      src="https://kit.fontawesome.com/e15e8c34af.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Mis páginas de estilo-->
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../assets/css/partials/_projects.css" />
+    <!--NEW: Mi font family elegida: Roboto-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    />
+  </head>
 
-<body> <!--<header id="header">--> <!-- NavBar -->
-    <img src="../images/Home/Membrete_Logo_Nombre_naranja2.png" class="imagen" width="17%" height="17%" style="border:0;"/>
-    <!--Source: https://www.w3schools.com/howto/howto_js_navbar_sticky.asp -->
-    <nav> <!--<h1>Southern Glory</h1> <br> <h4>by Silvina V. González Lorenzo </h4> // <!--<p>Bienvenidos <br> 2022</p>-->
-        <ul> <!--www.fontawesome.com -> mi font: naranja rgb(255, 165, 0)-->
-            <li><a href="../index.html"><i class="fa-solid fa-house fa-beat" style="color: #a52a2a;">
-                <p class="texto-ícono">Home</p></i></a></li> <!--Sobre mí (en español)-->
-            <li><a href="./skills.html"><i class="fa-solid fa-graduation-cap" style="color: #a52a2a;">
-                <p class="texto-ícono">Perfil</p></i></a></li>
-            <li><a href="./projects.html"><i class="fa-solid fa-school" style="color: #a52a2a;">
-                <p class="texto-ícono">Aula virtual</p></i></a></li>
-            <li><a href="./contact.html"><i class="fa-solid fa-location-dot" style="color: #a52a2a;">
-                <p class="texto-ícono">Contacto</p></i></a></li> 
-        </ul>  
-    </nav> 
-    
-    <main> 
-        <br><h2>Más de 40 playlists en YouTube</h2>
-        <h3>Para practicar también fuera de clase</h3>
-        <div class="iframe-container-padre"> <!--contenedor padre: es de tipo flex/color de fondo-->
-        
-            <link rel="stylesheet" href="../assets/css/partials/_projects.css">    <!--</main>-->
-            
-        <!--<header id="header">-->
-            <!--<h2>+40 playlists en YouTube</h2>
-            <!--<h2 class="header">+40 playlists en YouTube </h2>-->
-        <!--</header>-->
-            <!--*iframe for embedded videos and interactive content. An HTML into another HTML.-->
-        
-            <!--Responsive CSS Flex Multilínea-->
-            <div class="iframe-container-hijo-1">
-                <!--<h3>Artificial Intelligence or AI</h3>--Responsive: <h3 style="font-size:10vw">Artificial Intelligence or AI</h3>-->
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=zRARg5PdNmUnxxHW&amp;list=PLEvE2-mKBYbazkpm8tUBKdkk2RUWwlZAw" class="video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-                </iframe><p>Artificial Intelligence or AI</p> 
-                    <!--Mis videos elegidos para enseñar inglés para IA, NLP, ML e innovación científica.-->
-            </div>
-          
-            <div class="iframe-container-hijo-2">
-                <!--<h3>Science</h3>-->
-                <!--<div class="iframe-container">-->
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=EJWeaaf8JG8cP-10&amp;list=PLEvE2-mKBYbbG8WdghxIYEl8noI9MGzeR" class="video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-                </iframe><p>Science</p>
-                    <!--Mis videos elegidos para enseñar inglés científico.</p>-->
-                <!--</div>-->  
-            </div> 
-        
-            <div class="iframe-container-hijo-3">
-                <!--<h3>Computer Science & Tech</h3>-->
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=R39UFutxkdJgLiIJ&amp;list=PLEvE2-mKBYbYBb2482YpCsImJQ1IxNP8a" class="video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-                </iframe><p>Computer Science & Tech</p>
-                    <!--Mis videos elegidos para enseñar inglés para las Ciencias de la Computación.-->
-            </div>
-        
-            <div class="iframe-container-hijo-4">
-                <!--<h3>Accents in English</h3>-->
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=URhahwAa0HSJvTgG&amp;list=PLEvE2-mKBYbb8_Z1HOxzriK5uGbi6wThw" class="video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-                </iframe><p>Accents in English</p>
-                    <!--Mis videos elegidos para enseñar acentos (reales) en inglés.-->
-            </div>
-        </div>                  
-    </main>   
-           
-    <!--<a href="#header" class="button"><br>Volver arriba</a><br>--> 
-    <a href="https://www.youtube.com/@SILVINAVGONZALEZLORENZO/featured" class="button" target="_blank">Ver todas las playlists</a>
-    <!--Pseudoclases para hipervínculos (Clase 08. CSS 4)--->   
-    
-    <footer>
+  <body>
+    <!--<header id="header">-->
+    <!-- NavBar: etiqueta nueva 02.11.23 -->
+    <header class="navbar">
+      <img
+        src="../images/Home/SVGL_Logo.png"
+        class="logo-membrete"
+        style="border: 0"
+      />
+      <!--Source: https://www.w3schools.com/howto/howto_js_navbar_sticky.asp -->
+      <nav class="navbar-menu">
+        <!--<h1>Southern Glory</h1> <br> <h4>by Silvina V. González Lorenzo </h4> // <!--<p>Bienvenidos <br> 2022</p>-->
         <ul>
-            <li><a class="redsoc" href="https://www.linkedin.com/in/silvina-v-gonzalez-lorenzo" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-        <li><a class="redsoc" href="https://www.youtube.com/@SILVINAVGONZALEZLORENZO" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-    </ul>
-        <p class="texto-footer">&copy; 2023 Silvina V. González Lorenzo</p> 
-        <p class="texto-footer">Developed exclusively for Southern Glory</p>
+          <!--www.fontawesome.com -> mi font: naranja rgb(255, 165, 0)-->
+          <li>
+            <a href="../index.html"
+              ><i class="fa-solid fa-house fa-beat" style="color: #a52a2a">
+                <p class="texto-ícono">Home</p></i
+              ></a
+            >
+          </li>
+          <!--Sobre mí (en español)-->
+          <li>
+            <a href="./skills.html"
+              ><i class="fa-solid fa-graduation-cap" style="color: #a52a2a">
+                <p class="texto-ícono">Perfil</p></i
+              ></a
+            >
+          </li>
+          <li>
+            <a href="projects.html"
+              ><i class="fa-solid fa-school" style="color: #a52a2a">
+                <p class="texto-ícono">Aula virtual</p></i
+              ></a
+            >
+          </li>
+          <li>
+            <a href="./contact.html"
+              ><i class="fa-solid fa-location-dot" style="color: #a52a2a">
+                <p class="texto-ícono">Contacto</p></i
+              ></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--<main>
+      <br />-->
+    <div class="contenido-video">
+      <h2>Más de 40 playlists especializadas en YouTube</h2>
+      <p>
+        Para practicar inglés profesional y académico<br />
+        24 x 7 desde cualquier lugar del mundo
+      </p>
+
+      <div class="video-container-padre">
+        <div class="video-contenedor">
+          <!--video-contenedor 1/4-->
+          <div class="video-responsive-hijo-1">
+            <h3 class="título-video">Artificial Intelligence or AI</h3>
+            <!--<h3>Artificial Intelligence or AI</h3>--Responsive: <h3 style="font-size:10vw">Artificial Intelligence or AI</h3>-->
+            <iframe
+              src="https://www.youtube.com/embed/videoseries?si=zRARg5PdNmUnxxHW&amp;list=PLEvE2-mKBYbazkpm8tUBKdkk2RUWwlZAw"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <p class="caption-video">
+              Inglés para IA, NLP, ML e innovación científica
+            </p>
+            <a
+              href="https://youtube.com/playlist?list=PLEvE2-mKBYbazkpm8tUBKdkk2RUWwlZAw&feature=shared"
+              class="botón-ver-playlist"
+              target="_blank"
+              >Ver playlist</a
+            >
+          </div>
+          <!--Cuatro parámetros "default" que saqué: width="560" height="315" class="video" title="YouTube video player"-->
+        </div>
+        <!--cierra el video-contenedor 1/4-->
+
+        <div class="video-contenedor">
+          <!--video-contenedor 2/4-->
+          <div class="video-responsive-hijo-2">
+            <h3 class="título-video">Science</h3>
+            <iframe
+              src="https://www.youtube.com/embed/videoseries?si=EJWeaaf8JG8cP-10&amp;list=PLEvE2-mKBYbbG8WdghxIYEl8noI9MGzeR"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <p class="caption-video">Inglés científico-técnico</p>
+            <a
+              href="https://youtube.com/playlist?list=PLEvE2-mKBYbbG8WdghxIYEl8noI9MGzeR&feature=shared"
+              class="botón-ver-playlist"
+              target="_blank"
+              >Ver playlist</a
+            >
+          </div>
+          <!--Cuatro parámetros "default" que saqué: width="560" height="315" class="video" title="YouTube video player"-->
+        </div>
+
+        <div class="video-contenedor">
+          <!--video-contenedor 3/4-->
+          <div class="video-responsive-hijo-3">
+            <h3 class="título-video">Computer Science & Tech Innovation</h3>
+            <iframe
+              src="https://www.youtube.com/embed/videoseries?si=R39UFutxkdJgLiIJ&amp;list=PLEvE2-mKBYbYBb2482YpCsImJQ1IxNP8a"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <p class="caption-video">
+              Inglés para las Ciencias de la Computación
+            </p>
+            <a
+              href="https://youtube.com/playlist?list=PLEvE2-mKBYbYBb2482YpCsImJQ1IxNP8a&feature=shared"
+              class="botón-ver-playlist"
+              target="_blank"
+              >Ver playlist</a
+            >
+          </div>
+          <!--Cuatro parámetros "default" que saqué: width="560" height="315" class="video" title="YouTube video player"-->
+        </div>
+
+        <div class="video-contenedor">
+          <!--video-contenedor 4/4-->
+          <div class="video-responsive-hijo-4">
+            <h3 class="título-video">Accents in English</h3>
+            <iframe
+              src="https://www.youtube.com/embed/videoseries?si=URhahwAa0HSJvTgG&amp;list=PLEvE2-mKBYbb8_Z1HOxzriK5uGbi6wThw"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <p class="caption-video">Acentos (reales) en inglés</p>
+            <a
+              href="https://youtube.com/playlist?list=PLEvE2-mKBYbb8_Z1HOxzriK5uGbi6wThw&feature=shared"
+              class="botón-ver-playlist"
+              target="_blank"
+              >Ver playlist</a
+            >
+          </div>
+          <!--Cuatro parámetros "default" que saqué: width="560" height="315" class="video" title="YouTube video player"-->
+        </div>
+      </div>
+
+      <a
+        href="https://www.youtube.com/@SILVINAVGONZALEZLORENZO/featured"
+        class="botón-all-playlists"
+        target="_blank"
+        >Ver todas las playlists</a
+      >
+      <!--Pseudoclases para hipervínculos (Clase 08. CSS 4)--->
+    </div>
+
+    <footer>
+      <ul>
+        <li>
+          <a
+            class="redsoc"
+            href="https://www.linkedin.com/in/silvina-v-gonzalez-lorenzo"
+            target="_blank"
+            ><i class="fa fa-linkedin" aria-hidden="true"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            class="redsoc"
+            href="https://www.youtube.com/@SILVINAVGONZALEZLORENZO"
+            target="_blank"
+            ><i class="fa fa-youtube" aria-hidden="true"></i
+          ></a>
+        </li>
+      </ul>
+      <p class="texto-footer">&copy; 2023 Silvina V. González Lorenzo</p>
+      <p class="texto-footer">Developed exclusively for Southern Glory</p>
     </footer>
-</body>
+  </body>
+</html>
 
-</html> 
+<!--contenedor padre: es de tipo flex/color de fondo-->
+<!--</main>-->
+<!--<header id="header">-->
+<!--<h2>+40 playlists en YouTube</h2>
+            <!--<h2 class="header">+40 playlists en YouTube </h2>-->
+<!--</header>-->
+<!--*iframe for embedded videos and interactive content. An HTML into another HTML.-->
 
+<!--Responsive CSS Flex Multilínea-->
+<!--<div class="iframe-container-hijo-1">
+          <!--<h3>Artificial Intelligence or AI</h3>--Responsive: <h3 style="font-size:10vw">Artificial Intelligence or AI</h3>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/videoseries?si=zRARg5PdNmUnxxHW&amp;list=PLEvE2-mKBYbazkpm8tUBKdkk2RUWwlZAw"
+            class="video"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          >
+          </iframe>
+          <p>Artificial Intelligence or AI</p>
+          <!--Mis videos elegidos para enseñar inglés para IA, NLP, ML e innovación científica.
+        </div>-->
+
+<!--<div class="iframe-container-hijo-2">
+          <!--<h3>Science</h3>-->
+<!--<div class="iframe-container">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/videoseries?si=EJWeaaf8JG8cP-10&amp;list=PLEvE2-mKBYbbG8WdghxIYEl8noI9MGzeR"
+            class="video"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          >
+          </iframe>
+          <p>Science</p>
+          Mis videos elegidos para enseñar inglés científico.</p>
+          </div>
+        </div>-->
+
+<!--<div class="iframe-container-hijo-3">
+          <!--<h3>Computer Science & Tech</h3>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/videoseries?si=R39UFutxkdJgLiIJ&amp;list=PLEvE2-mKBYbYBb2482YpCsImJQ1IxNP8a"
+            class="video"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          >
+          </iframe>
+          <p>Computer Science & Tech</p>
+          <!--Mis videos elegidos para enseñar inglés para las Ciencias de la Computación.
+        </div>-->
+
+<!--<div class="iframe-container-hijo-4">
+          <!--<h3>Accents in English</h3>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/videoseries?si=URhahwAa0HSJvTgG&amp;list=PLEvE2-mKBYbb8_Z1HOxzriK5uGbi6wThw"
+            class="video"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+          <p>Accents in English</p>
+          <!--Mis videos elegidos para enseñar acentos (reales) en inglés.
+        </div>
+      </div>
+    </main>-->
+
+<!--<a href="#header" class="button"><br>Volver arriba</a><br>-->
+<!--<a
+      href="https://www.youtube.com/@SILVINAVGONZALEZLORENZO/featured"
+      class="botón-all-playlists" target="_blank">Ver todas las playlists</a>
+    <!--Pseudoclases para hipervínculos (Clase 08. CSS 4)
+    </div>
+
+    <footer>
+      <ul>
+        <li>
+          <a
+            class="redsoc"
+            href="https://www.linkedin.com/in/silvina-v-gonzalez-lorenzo"
+            target="_blank"
+            ><i class="fa fa-linkedin" aria-hidden="true"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            class="redsoc"
+            href="https://www.youtube.com/@SILVINAVGONZALEZLORENZO"
+            target="_blank"
+            ><i class="fa fa-youtube" aria-hidden="true"></i
+          ></a>
+        </li>
+      </ul>
+      <p class="texto-footer">&copy; 2023 Silvina V. González Lorenzo</p>
+      <p class="texto-footer">Developed exclusively for Southern Glory</p>
+    </footer>
+  </body>
+</html>
 
 <!--Fuentes consultadas:
     -Materiales de referencia y videos YT, CAC Comisión #23526
@@ -95,5 +324,5 @@
     -https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_video3; 
     -https://developers.google.com/youtube/documentation 
      SVGL, fecha de versión: 22.10.23-->
-     
-     <!--Versión original al 22.10.2023: Silvina V. González Lorenzo-->
+
+<!--Versión original al 04.11.2023: Silvina V. González Lorenzo-->
