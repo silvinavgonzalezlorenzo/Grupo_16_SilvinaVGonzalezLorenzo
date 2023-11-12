@@ -1,25 +1,48 @@
 footer {
     background-color: var(--bg-color);
-    padding: 10px;
+    padding: 10px 20px; /*05.11.23: 20px agregado igual que header*/
     text-align: center;
     margin: 0;
-}
+    justify-content: center; /*New 30.10.23*/
+    /*position: absolute; /*Removed 06.11.23 to favor responsiveness. New 30.10.23.*/
+    width: 100%; /*New 30.10.23*/
+    max-width: 1200px; /*igual que el header*/
+} 
 
 footer ul li a {
     color: var(--primary-color);
     margin: 1px 0px; /*Espacio e/ íconos: margen 1 arriba y abajo, y 0 a la derecha e izq.*/
     font-size: 20px; /*20px es tamaño de los íconos*/
-    margin: 0;
+    /*margin: 0; New 07.11.23*/
 }
 
 footer ul {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 20px;
     justify-content: center; 
 }  
 
-.texto-footer{
+.texto-footer {
     color: orangered; /*DARKBLUE: rgb(0, 0, 139)*/ 
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+} 
+
+/*New 05.11.23: Traído de headers.css -- para unificar criterios.
+Responsive design --> Teóricamente responsives con pantalla rotada también*/
+
+/*PC ESCRITORIO: ya estaría "user-friendly" con los parámetros traídos del header.css, but...*/
+@media screen and (min-width:769px) { /*Le confirmo el breakpoint*/
 }
+
+/*CELULAR*/  /*Emulados del projects.css, pero sólo marco el breakpoint*/
+@media screen and (max-width:480px) {
+}
+
+ /*TABLET*/ /*Again, sólo breakpoint*/
+@media screen and (min-width:481px) and (max-width: 768px) {
+}   
+
+/*Nota: el 09.11.23 aprendí sobre MOBILE FIRST (golden rule developer). 
+Los parámetros arriba descriptos son anteriores.*/ 

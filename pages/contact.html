@@ -1,127 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grupo_16_SouthernGlory</title>
-    <script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <script
+      src="https://kit.fontawesome.com/e15e8c34af.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Mis páginas de estilo-->
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--NEW: Mi font family elegida: Roboto-->
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    />
+  </head>
 
-<body>
-    <img src="../images/Home/Membrete_Logo_Nombre_naranja2.png" class="imagen" width="17%" height="17%" style="border:0;" />
-    <nav>
-        <ul>
-            <li><a href="../index.html"><i class="fa-solid fa-house fa-beat" style="color: #a52a2a;">
-                <p class="texto-ícono">Home</p></i></a></li> <!--Sobre mí (en español)-->
-            <li><a href="./skills.html"><i class="fa-solid fa-graduation-cap" style="color: #a52a2a;">
-                <p class="texto-ícono">Perfil</p></i></a></li>
-            <li><a href="./projects.html"><i class="fa-solid fa-school" style="color: #a52a2a;">
-                <p class="texto-ícono">Aula virtual</p></i></a></li>
-            <li><a href="./contact.html"><i class="fa-solid fa-location-dot" style="color: #a52a2a;">
-                <p class="texto-ícono">Contacto</p></i></a></li> 
-        </ul>
+  <body>
+    <!--Navbar: etiqueta nueva 02.11.23-->
+    <header class="navbar">
+      <img
+        src="../images/Home/SVGL_Logo.png"
+        class="logo-membrete"
+        style="border: 0"
+      />
+      <!--<h1>Southern Glory</h1> <br> <h4>by Silvina V. González Lorenzo </h4> // <p>Bienvenidos <br> 2022</p>-->
+      <nav class="navbar-menu">
+        <!--nueva tag-->
+       <ul>
+          <!--www.fontawesome.com -> mi font: naranja rgb(255, 165, 0)-->
+         <li>
+          <a href="../index.html"
+            ><i class="fa-solid fa-house fa-beat" style="color: #a52a2a">
+              <p class="texto-ícono">Home</p></i
+            ></a
+          >
+        </li>
+        <!--Sobre mí (en español)-->
+        <li>
+          <a href="./skills.html"
+            ><i class="fa-solid fa-graduation-cap" style="color: #a52a2a">
+              <p class="texto-ícono">Perfil</p></i
+            ></a
+          >
+        </li>
+        <li>
+          <a href="./projects.html"
+            ><i class="fa-solid fa-school" style="color: #a52a2a">
+              <p class="texto-ícono">Aula virtual</p></i
+            ></a
+          >
+        </li>
+        <li>
+          <a href="./contact.html"
+            ><i class="fa-solid fa-location-dot" style="color: #a52a2a">
+              <p class="texto-ícono">Contacto</p></i
+            ></a
+          >
+        </li>
+      </ul>
     </nav>
-
+    </header>
+    
     <main>
-        <div class="divPrincipal__page">
-
-            <div class="ubicacion__page">
-         <h2>Mi central de operaciones</h2>
-                    <iframe class="iframe-form"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.5303681163127!2d-3.6859556251198478!3d40.46353025279141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42291811915257%3A0x1a6453cab9c39275!2sC.%20de%20Apolonio%20Morales%2C%2011%2C%2028036%20Madrid%2C%20Spain!5e0!3m2!1sen!2sar!4v1693201716413!5m2!1sen!2sar"
-                        style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <p>C/Apolonio Morales, 11, Ático Derecha, 28036 Madrid</p>
-            </div> 
-        <br><br>
-                <div class="formulario__principal">
-                    <h2>¡Escríbeme!</h2>
-                    <p>Deja tu mensaje o sugerencia aquí:</p>
-        <form action="" class="formulario" id="formulario">
-        
+      <div class="divPrincipal__page">
+        <div class="contenedor-mapa">
+          <h2>Central de operaciones</h2>
+          <iframe
+            class="iframe-form"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.5303681163127!2d-3.6859556251198478!3d40.46353025279141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42291811915257%3A0x1a6453cab9c39275!2sC.%20de%20Apolonio%20Morales%2C%2011%2C%2028036%20Madrid%2C%20Spain!5e0!3m2!1sen!2sar!4v1693201716413!5m2!1sen!2sar"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <p>Mi oficina está a tres calles del Santiago Bernabéu</p>
+        </div>
+        <br /><br />
+        <div class="formulario__principal">
+          <h2>Contacto 24 x 7</h2>
+          <p>Te responderé el mismo día</p>
+          <form action="" class="formulario" id="formulario">
             <!--Grupo: nombre-->
             <div class="formulario__grupo" id="grupo__nombre">
-               <label for="nombre" class="formulario__label">Nombre y apellido <i class="fa-solid fa-address-card"></i></label>
-               <div class="formulario__grupo-input">
-                   <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="john Doe"> <!--John Doe nombre de ejemplo-->
-                   <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
-               </div>
-               <p class="formulario__input-error">Los datos proporcionados pueden contener, al menos, 40 caracteres.</p>
-           </div>
-        
-           <!--Grupo: Correo Electronico-->
-         <div class="formulario__grupo" id="grupo__correo">
-            <label for="correo" class="formulario__label">Correo electrónico <i class="fa-solid fa-envelope"></i></label>
-            <div class="formulario__grupo-input">
-                <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
-                <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+              <label for="nombre" class="formulario__label"
+                >Nombre y apellido <i class="fa-regular fa-id-card"></i
+              ></label>
+              <div class="formulario__grupo-input">
+                <input
+                  type="text"
+                  class="formulario__input"
+                  name="nombre"
+                  id="nombre"
+                  placeholder="Jane Doe"
+                />
+                <!--Jane Doe nombre de ejemplo-->
+                <i
+                  class="formulario__validacion-estado fa-solid fa-circle-xmark"
+                ></i>
+              </div>
+              <p class="formulario__input-error">
+                Los datos proporcionados pueden contener, al menos, 40
+                caracteres.
+              </p>
             </div>
-            <p class="formulario__input-error">El correo solo puede contener letras, números, puntos, guiones y guión bajo.</p>
-        </div>
-        
-        
-        <!--Grupo: País-->
-        <div class="formulario__grupo" id="grupo__pais">
-            <label for="pais" class="formulario__label">País <i class="fa-solid fa-flag"></i></label>
-            <div class="formulario__grupo-input">
-                <input type="text" class="formulario__input" name="pais" id="pais" placeholder="Argentina"> <!--John Doe nombre de ejemplo-->
-                <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+
+            <!--Grupo: Correo Electrónico-->
+            <div class="formulario__grupo" id="grupo__correo">
+              <label for="correo" class="formulario__label"
+                >Correo electrónico <i class="fa-solid fa-at"></i
+              ></label>
+              <div class="formulario__grupo-input">
+                <input
+                  type="email"
+                  class="formulario__input"
+                  name="correo"
+                  id="correo"
+                  placeholder="correo@correo.com"
+                />
+                <i
+                  class="formulario__validacion-estado fa-solid fa-circle-xmark"
+                ></i>
+              </div>
+              <p class="formulario__input-error">
+                El correo solo puede contener letras, números, puntos, guiones y
+                guión bajo.
+              </p>
             </div>
-            <p class="formulario__input-error">Indica tu país de residencia.</p>
-        </div>
-         
-         <!--Grupo: Telefono-->
-         <div class="formulario__grupo" id="grupo__telefono">
-            <label for="telefono" class="formulario__label">Teléfono <i class="fa-solid fa-square-phone"></i></label>
-            <div class="formulario__grupo-input">
-                <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="344447732">
-                <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+
+            <!--Grupo: País-->
+            <div class="formulario__grupo" id="grupo__pais">
+              <label for="pais" class="formulario__label"
+                >País <i class="fa-regular fa-flag"></i
+              ></label>
+              <div class="formulario__grupo-input">
+                <input
+                  type="text"
+                  class="formulario__input"
+                  name="pais"
+                  id="pais"
+                  placeholder="Argentina"
+                />
+                <!--Jane Doe nombre de ejemplo-->
+                <i
+                  class="formulario__validacion-estado fa-solid fa-circle-xmark"
+                ></i>
+              </div>
+              <p class="formulario__input-error">
+                Indica tu país de residencia.
+              </p>
             </div>
-            <p class="formulario__input-error">El teléfono solo puede contener números y el máximo es de 14 dígitos.</p>
-        </div>
-        
-        <!--Grupo: Mensaje-->
-        <div class="formulario__grupo" id="grupo__mensaje">
-            <label for="mensaje" class="formulario__label">Mensaje <i class="fa-regular fa-face-smile-beam"></i></label>
-            <div class="formulario__grupo-input">
-                <input tyoe="text" class="formulario__input" id="mensaje" name="mensaje" placeholder="Deja tu mensaje o consulta">
-                <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+
+            <!--Grupo: Telefono-->
+            <div class="formulario__grupo" id="grupo__telefono">
+              <label for="telefono" class="formulario__label"
+                >Teléfono <i class="fa-solid fa-phone-volume fa-fade"></i
+              ></label>
+              <div class="formulario__grupo-input">
+                <input
+                  type="text"
+                  class="formulario__input"
+                  name="telefono"
+                  id="telefono"
+                  placeholder="3444477323843"
+                />
+                <i
+                  class="formulario__validacion-estado fa-phone-flip"
+                ></i>
+              </div>
+              <p class="formulario__input-error">
+                El teléfono solo puede contener números y el máximo es de 14
+                dígitos.
+              </p>
             </div>
-            <p class="formulario__input-error">El mensaje debe contener algo.</p>
+
+            <!--Grupo: Mensaje-->
+            <div class="formulario__grupo" id="grupo__mensaje">
+              <label for="mensaje" class="formulario__label"
+                >Tu mensaje
+                <!--<i class="fa-regular fa-face-smile-wink"></i
+              >--></label>
+              <div class="formulario__grupo-input">
+                <input
+                  tyoe="text"
+                  class="formulario__input"
+                  id="mensaje"
+                  name="mensaje"
+                  placeholder="Deja tu mensaje"
+                />
+                <i
+                  class="formulario__validacion-estado fa-solid fa-circle-xmark"
+                ></i>
+              </div>
+              <p class="formulario__input-error">
+                El mensaje debe contener algo.
+              </p>
+            </div>
+
+            <!-- Grupo Error-->
+            <div class="formulario__mensaje" id="formulario__mensaje">
+              <p>
+                <i class="fa-solid fa-circle-exclamation fa-fade"></i>
+                <b>Error:</b> ¡Completa todos los campos!
+              </p>
+            </div>
+
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+              <button type="submit" class="formulario__btn">
+                <b>Enviar</b>
+              </button>
+              <p
+                class="formulario__mensaje-exito"
+                id="formulario__mensaje-exito"
+              >
+                <b>¡Formulario enviado con éxito!</b>
+              </p>
+            </div>
+          </form>
         </div>
-        
-        <!-- Grupo Error-->
-        <div class="formulario__mensaje" id="formulario__mensaje">
-            <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
-        </div>
-        
-        <div class="formulario__grupo formulario__grupo-btn-enviar">
-            <button type="submit" class="formulario__btn"><b>Enviar</b></button>
-            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito"><b>¡Formulario enviado con éxito!</b></p>
-        </div>
-        
-        </form>
-        </div>
-        
-        </div>
+      </div>
     </main>
 
     <script src="../JS/form.js"></script>
 
     <footer>
-        <ul>
-            <li><a class="redsoc" href="https://www.linkedin.com/in/silvina-v-gonzalez-lorenzo" target="_blank"><i
-                        class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-            <li><a class="redsoc" href="https://www.youtube.com/@SILVINAVGONZALEZLORENZO" target="_blank"><i
-                        class="fa fa-youtube" aria-hidden="true"></i></a></li>
-        </ul>
-        <p class="texto-footer">&copy; 2023 Silvina V. González Lorenzo</p> 
-        <p class="texto-footer">Developed exclusively for Southern Glory</p>
+      <ul>
+        <li>
+          <a
+            class="redsoc"
+            href="https://www.linkedin.com/in/silvina-v-gonzalez-lorenzo"
+            target="_blank"
+            ><i class="fa fa-linkedin" aria-hidden="true"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            class="redsoc"
+            href="https://www.youtube.com/@SILVINAVGONZALEZLORENZO"
+            target="_blank"
+            ><i class="fa fa-youtube" aria-hidden="true"></i
+          ></a>
+        </li>
+      </ul>
+      <p class="texto-footer">&copy; 2023 Silvina V. González Lorenzo</p>
+      <p class="texto-footer">Developed exclusively for Southern Glory</p>
     </footer>
-</body>
-
+  </body>
 </html>
-

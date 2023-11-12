@@ -1,58 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grupo_16_SouthernGlory</title>
+    <script
+      src="https://kit.fontawesome.com/e15e8c34af.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Mis páginas de estilo-->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--NEW: Mi font family elegida: Roboto-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grupo_16_SouthernGlory</title> 
-    <script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
- 
-<body>
-    <!-- NavBar -->
-    <img src="./images/Home/Membrete_Logo_Nombre_naranja2.png" class="imagen" width="17%" height="17%" style="border:0;"/>
-    <!--<h1>Southern Glory</h1> <br> <h4>by Silvina V. González Lorenzo </h4> // <p>Bienvenidos <br> 2022</p>-->
-    <nav>                                                                    
-        <ul>     <!--www.fontawesome.com -> mi font: naranja rgb(255, 165, 0)-->
-            <li><a href="index.html"><i class="fa-solid fa-house fa-beat" style="color: #a52a2a;">
-                <p class="texto-ícono">Home</p></i></a></li> <!--Sobre mí (en español)-->
-            <li><a href="./pages/skills.html"><i class="fa-solid fa-graduation-cap" style="color: #a52a2a;">
-                <p class="texto-ícono">Perfil</p></i></a></li>
-            <li><a href="./pages/projects.html"><i class="fa-solid fa-school" style="color: #a52a2a;">
-                <p class="texto-ícono">Aula virtual</p></i></a></li>
-            <li><a href="./pages/contact.html"><i class="fa-solid fa-location-dot" style="color: #a52a2a;">
-                <p class="texto-ícono">Contacto</p></i></a></li> 
-        </ul>
-    </nav>  
-    
-    <main>
-        <section class="principal">
-            <img src="./images/Home/LinkedIn_Foto_perfil.jpg" class="imagen" width="13%" height="13%" style="border:0;"/>  <!--<img src="https://picsum.photos/200/300"-->
-            <div class="biografia">
-                <p class="texto"><br>
-                Mi pasión es enseñar inglés como lengua extranjera, para fines específicos y académicos (en inglés, ESP y EAP), y traducción médica en la maestría de traducción de la UB. Además, soy traductora técnico-científico-literaria especializada en medicina y otras ciencias.
-                </p>
-                <!--<h2>Sobre mí</h2>-->
-                <h2><a href= "https://www.youtube.com/@SILVINAVGONZALEZLORENZO/about" target="_blank"><br>
-                <img src="./images/Home/Boton_About.png" alt="Union Jack flag" width="22%" height="22%"><br></a></h2>
-            </div>
-        </section>
-    </main>  
-
-    <footer>
+  <body>
+    <!--Navbar: etiqueta nueva 02.11.23-->
+    <header class="navbar">
+      <img
+        src="./images/Home/SVGL_Logo.png"
+        class="logo-membrete"
+        style="border: 0"
+      />
+      <!--<h1>Southern Glory</h1> <br> <h4>by Silvina V. González Lorenzo </h4> // <p>Bienvenidos <br> 2022</p>-->
+      <nav class="navbar-menu">
+        <!--nueva tag-->
         <ul>
-            <li><a class="redsoc" href="https://www.linkedin.com/in/silvina-v-gonzalez-lorenzo" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-        <li><a class="redsoc" href="https://www.youtube.com/@SILVINAVGONZALEZLORENZO" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-    </ul>  
-        <p class="texto-footer">&copy; 2023 Silvina V. González Lorenzo</p> 
-        <p class="texto-footer">Developed exclusively for Southern Glory</p>
-    </footer>
-</body>
+          <!--www.fontawesome.com -> mi font: naranja rgb(255, 165, 0)-->
+          <li>
+            <a href="index.html"
+              ><i class="fa-solid fa-house fa-beat" style="color: #a52a2a">
+                <p class="texto-ícono">Home</p></i
+              ></a
+            >
+          </li>
+          <!--Sobre mí (en español)-->
+          <li>
+            <a href="./pages/skills.html"
+              ><i class="fa-solid fa-graduation-cap" style="color: #a52a2a">
+                <p class="texto-ícono">Perfil</p></i
+              ></a
+            >
+          </li>
+          <li>
+            <a href="./pages/projects.html"
+              ><i class="fa-solid fa-school" style="color: #a52a2a">
+                <p class="texto-ícono">Aula virtual</p></i
+              ></a
+            >
+          </li>
+          <li>
+            <a href="./pages/contact.html"
+              ><i class="fa-solid fa-location-dot" style="color: #a52a2a">
+                <p class="texto-ícono">Contacto</p></i
+              ></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+     
+    <!--Nuevo 10.11.23-->
+    <main>
+      <div class="bio-container-padre">
+        
+        <!--bio-contenedor 1/8-->  <!--Posicionamiento SEO h1 + h2-->
+          <div class="bio-responsive-hijo-1">
+            <h1 class="título-bio">Silvina V. González Lorenzo</h1>
+            <img
+              src="./images/Home/SVGL_Logo_original.png"
+              class="imagen-bio"
+              alt="Company logo"
+            />
+            <h2 class="subtítulo-bio">Language Services</h2>
+            <!--<a href="https://youtube.com/playlist?list=PLEvE2-mKBYbazkpm8tUBKdkk2RUWwlZAw&feature=shared"
+              class="botón-ver-playlist" target="_blank">Ver playlist</a>-->
+          </div>
+        <!--cierra el bio-contenedor 1/8-->
 
+        <!--bio-contenedor 2/8-->  <!--Posicionamiento SEO h3-->
+          <div class="bio-responsive-hijo-2">
+            <h3 class="título-bio">Quién soy</h3>
+            <img
+              src="./images/Home/Mini-Bio.png"
+              class="imagen-bio"
+              alt="Company logo"
+            />
+            <!--<p class="caption-bio">Mini biografía</p>-->
+            <a
+              href="https://www.youtube.com/@SILVINAVGONZALEZLORENZO/about"
+              class="botón-about-me"
+              target="_blank"
+              >About me</a>
+          </div>
+        <!--cierra el bio-contenedor 2/8-->
+
+        <!--bio-contenedor 3/8-->
+          <div class="bio-responsive-hijo-3">
+            <h3 class="título-bio">Mi compromiso con la educación</h3>
+            <img
+              src="./images/Home/SDG4_ONU.png"
+              class="imagen-bio"
+              alt="Objetivo ODS4 ONU"
+            />
+            <p class="caption-bio">Garantizar la educación<br>de calidad</p>
+            <a
+              href="https://sdgs.un.org/goals/goal4"
+              class="botón-about-me"
+              target="_blank"
+              >Ver más</a
+            >
+          </div>
+        <!--cierra el bio-contenedor 3/8-->
+
+        <!--bio-contenedor 4/8-->
+          <div class="bio-responsive-hijo-4">
+            <h3 class="título-bio">Mi compromiso con la igualdad</h3>
+            <img
+              src="./images/Home/SDG5_ONU.png"
+              class="imagen-bio"
+              alt="Objetivo ODS5 ONU"
+            />
+            <p class="caption-bio">Educar para dar más oportunidades</p>
+            <a
+              href="https://sdgs.un.org/goals/goal5"
+              class="botón-about-me"
+              target="_blank"
+              >Ver más</a
+            >
+          </div>
+        <!--cierra el bio-contenedor 4/8-->
+
+        <!--bio-contenedor 5/8-->
+          <div class="bio-responsive-hijo-5">
+            <h3 class="título-bio">Mi compromiso con el futuro</h3>
+            <img
+              src="./images/Home/SDG8_ONU.png"
+              class="imagen-bio"
+              alt="Objetivo ODS8 ONU"
+            />
+            <p class="caption-bio">Educar para profesionalizar</p>
+            <a
+              href="https://sdgs.un.org/goals/goal8"
+              class="botón-about-me"
+              target="_blank"
+              >Ver más</a
+            >
+          </div>
+        <!--cierra el bio-contenedor 5/8-->
+
+        <!--bio-contenedor 6/8-->
+          <div class="bio-responsive-hijo-6">
+            <h3 class="título-bio">Mi compromiso con la innovación</h3>
+            <img
+              src="./images/Home/SDG9_ONU.png"
+              class="imagen-bio"
+              alt="Objetivo ODS9 ONU"
+            />
+            <p class="caption-bio">Contribuir con la innovación</p>
+            <a
+              href="https://sdgs.un.org/goals/goal9"
+              class="botón-about-me"
+              target="_blank"
+              >Ver más</a
+            >
+          </div>
+        <!--cierra el bio-contenedor 6/8-->
+
+        <!--bio-contenedor 7/8-->
+          <div class="bio-responsive-hijo-7">
+            <h3 class="título-bio">Recomendación</h3>
+            <img
+              src="./images/Home/Reseña1.png"
+              class="imagen-bio"
+              alt="Recomendación"
+            />
+            <!--<p class="caption-bio">Creo en la búsqueda 
+              de la excelencia</p>-->
+            <a
+              href=" https://ub.edu.ar/escuela-de-lenguas-y-estudios-extranjeros/maestria-en-traduccion-de-ingles-docentes"
+              class="botón-about-me"
+              target="_blank"
+              >Ver más</a
+            >
+          </div>
+        <!--cierra el bio-contenedor 7/8-->
+
+        <!--bio-contenedor 8/8-->
+          <div class="bio-responsive-hijo-8">
+            <h3 class="título-bio">Recomendación</h3>
+            <img
+              src="./images/Home/Reseña2.png"
+              class="imagen-bio"
+              alt="Recomendación"
+            />
+            <!--<p class="caption-bio">
+              Servicios lingüísticos personalizados
+            </p>-->
+            <a
+              href="https://ar.linkedin.com/in/silvina-v-gonzalez-lorenzo"
+              class="botón-about-me"
+              target="_blank"
+              >Ver más</a>
+          </div>
+      </div>
+    </main>
+    
+    <footer>
+      <ul>
+        <li>
+          <a
+            class="redsoc"
+            href="https://www.linkedin.com/in/silvina-v-gonzalez-lorenzo"
+            target="_blank"
+            ><i class="fa fa-linkedin" aria-hidden="true"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            class="redsoc"
+            href="https://www.youtube.com/@SILVINAVGONZALEZLORENZO"
+            target="_blank"
+            ><i class="fa fa-youtube" aria-hidden="true"></i
+          ></a>
+        </li>
+      </ul>
+      <p class="texto-footer">&copy; 2023 Silvina V. González Lorenzo</p>
+      <p class="texto-footer">Developed exclusively for Southern Glory</p>
+    </footer>
+  </body>
 </html>
-   
 
 <!--Sources:
-    https://fontawesome.com/icons/house?f=classic&s=solid&an=beat&pc=%23ffa500-->
+    https://fontawesome.com/icons/house?f=classic&s=solid&an=beat&pc=%23ffa500
+    https://www.w3schools.com/
+    Apuntes CAC Comisión #23526
+    Prettier X
+  -->
