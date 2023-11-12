@@ -1,7 +1,7 @@
 /*Mi font family elegida (nota para mejorar la accesibilidad)*/
 html {
-  font-family: "Roboto", sans-serif;
   margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 h1,
@@ -17,6 +17,7 @@ h1 {
 }
 h2 {
   font-size: 20px;
+  padding-top: 20px;
 }
 h3 {
   font-size: 18px;
@@ -25,10 +26,10 @@ h3 {
 }
 
 /* New 10.11.23 */
-main {
+main { /*creado especialmente para contener tantos íconos justo como los quiero*/
   max-width: 1200px;
   margin: auto;
-  padding: 20px; /*separación en todo el perímetro*/
+  /*padding: 20px; /*separación en todo el perímetro*/
   box-sizing: border-box; /*padding y border en el tamaño de la caja*/
   text-align: center; /*New 11.11.23: centrado del contenido*/
 }
@@ -131,7 +132,7 @@ Responsive de contenedores hijos con pantallas más grandes*/
 .caption-bio {
   text-align: center;
   color: orangered;
-  font-size: 14px;
+  font-size: 16px;
   margin: 5px 0; /*5 arriba, 5 abajo, 0 el resto*/
 }
 

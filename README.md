@@ -7,4 +7,6 @@ TPO de CAC:
 
 29.10.23: Ajustes en main, variables y styles para unificar criterios alineados con la imagen corporativa (presentación, tono, contenido, UI y UX). Mejoras en funcionalidades y agilidad pensando en el user interface (UI). Se continúa con el proyecto nuevo archivo por archivo.
 
-11.11.23: Se cambia el nombre del proyecto individual a "Grupo_16_SilvinaVGonzalezLorenzo" (Rama4Sil).
+11.11.23: Se cambia el nombre del proyecto individual a "Grupo_16_SilvinaVGonzalezLorenzo" (Rama4Sil). Mejoras continuas en todos los documentos, en particular index.html/main.css y en su impacto en los demás contenidos del proyecto. Unificación continua de criterios de diseño, estilo, marca, representatividad del cliente (y su emprendimiento) y responsibidad a lo largo del proyecto.
+
+12.11.23: Cambio de nombre de proyecto extendido a todos los contenidos (cabezales de html, footer). Mejoas en mensaje al usuario en solapa de Aula Virtual (contact.html/projects.css).Form.css: Mejoras (animaciones, mensajes al usuario). 
