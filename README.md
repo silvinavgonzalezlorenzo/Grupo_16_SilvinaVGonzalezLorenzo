@@ -1,4 +1,3 @@
-# Grupo_16_SilvinaVGonzalezLorenzo
 TPO de CAC: 
 25.10.23: Silvina V. González Lorenzo crea este repositorio con el nombre Grupo_16_SouthernGlory_NEW para su TPO individual para el Curso Full Stack Python (CAC). El nombre deriva del primer proyecto para el mismo curso: Grupo_16_SouthernGlory (29.08.23-22.10.23): cambio de nombre registrado en ese repositorio el 24.10.23 (Ver Rama9Sil, https://github.com/silvinavgonzalezlorenzo/Grupo_16_SouthernGlory.git).
 
