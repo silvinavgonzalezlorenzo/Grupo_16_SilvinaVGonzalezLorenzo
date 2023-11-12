@@ -1,208 +1,214 @@
-.contenedor-mapa { /*contenedor del mapa*/
-    /*background-color: #1ed12d;*/
-    max-width: 600px; 
-    width: 100%;
-    padding-top: 56,25%; /*conserva la relación 16:9*/
-    position: relative; 
-    margin: 0 auto; /*centrado horizontal*/
-    /*justify-content: center;*/
-    /*flex-direction: column;*/
-    border: 20px;
-    align-items: center;
+.contenedor-mapa {
+  /*contenedor del mapa*/
+  /*background-color: #1ed12d;*/
+  max-width: 600px;
+  width: 100%;
+  padding-top: 56, 25%; /*conserva la relación 16:9*/
+  position: relative;
+  margin: 0 auto; /*centrado horizontal*/
+  /*justify-content: center;*/
+  /*flex-direction: column;*/
+  border: 20px;
+  align-items: center;
 }
 
 .iframe-form {
-    height: 100%;
-    width: 100%;
-    top: 0; 
-    left: 0; 
-    justify-content: center;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  justify-content: center;
 }
 
 .contenedor-mapa h2,
 .formulario__principal h2,
 .contenedor-mapa p {
-    text-align: center;
-    margin: 10px; 
-    padding-top: 20px; /*separación desde header hasta h2*/
+  text-align: center;
+  margin: 10px;
+  padding-top: 20px; /*separación desde header hasta h2*/
 }
 
-.contenedor-mapa p { /*igual que el caption de skills.css*/
-    color: orangered; /*antes: darkblue;*/
-    font-size: 14px; 
-    padding-top: 10px;
+.contenedor-mapa p {
+  /*igual que el caption de skills.css*/
+  color: orangered; /*antes: darkblue;*/
+  font-size: 14px;
+  padding-top: 10px;
 }
 
-.formulario__principal { /*¡Escríbeme 24 x 7!*/
-    max-width: 600px;
-    width: 100%;
-    padding: 30px;
-    padding-top: 10px; /*sobreescribe la propiedad anterior: sólo "top"*/
-    display: grid;
-    border-radius: 5px;
-    background-color: rgb(240, 240, 201); /*Background formulario*/
-    text-align: center;
-    margin: auto; /*15 arriba, 5 abajo, 0 el resto. Antes: auto;*/
-    margin-bottom: 5%; /*separación con el footer*/
+.formulario__principal {
+  /*¡Escríbeme 24 x 7!*/
+  max-width: 600px;
+  width: 100%;
+  padding: 30px;
+  padding-top: 10px; /*sobreescribe la propiedad anterior: sólo "top"*/
+  display: grid;
+  border-radius: 5px;
+  background-color: rgb(240, 240, 201); /*Background formulario*/
+  text-align: center;
+  margin: auto; /*15 arriba, 5 abajo, 0 el resto. Antes: auto;*/
+  margin-bottom: 5%; /*separación con el footer*/
 }
 
-.formulario__principal p { /*Te responderé en el mismo día*/
-    color: orangered; /*antes: darkblue;*/
-    font-size: 16px; 
-    padding-bottom: 10px; /*para separar desde este punto de ref. hacia abajo*/
-    /*font-weight: bold;*/
+.formulario__principal p {
+  /*Te responderé en el mismo día*/
+  color: orangered; /*antes: darkblue;*/
+  font-size: 16px;
+  padding-bottom: 10px; /*para separar desde este punto de ref. hacia abajo*/
+  /*font-weight: bold;*/
 }
 
 .formulario {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
 .formulario__label {
-    /*block: ocupa el 100%*/
-    display: block;
-    font-weight: 700; /*Coloca letras en negrita*/
-    padding: 10px;
-    cursor: pointer;
+  /*block: ocupa el 100%*/
+  display: block;
+  font-weight: 700; /*Coloca letras en negrita*/
+  padding: 10px;
+  cursor: pointer;
 }
 
 .formulario__grupo-input {
-    position: relative;
+  position: relative;
 }
 
-.formulario__input { /*cambia los espacios a rellenar*/
-    width: 100%;
-    background: #fff; /*relleno del input*/
-    border: 3px solid transparent;
-    border-radius: 3px;
-    /*height y line-height es para que el texto quede centrado*/
-    height: 45px;
-    line-height: 45px;
-    padding: 0 40px 0 10px; /*arriba derecha abajo izquierda*/
-    transition: .3s ease all; /*AVERIGUAR QUE ES??*/
+.formulario__input {
+  /*cambia los espacios a rellenar*/
+  width: 100%;
+  background: #fff; /*relleno del input*/
+  border: 3px solid transparent;
+  border-radius: 3px;
+  /*height y line-height es para que el texto quede centrado*/
+  height: 45px;
+  line-height: 45px;
+  padding: 0 40px 0 10px; /*arriba derecha abajo izquierda*/
+  transition: 0.3s ease all; /*AVERIGUAR QUE ES??*/
 }
 
 /*Transición cuando se hace click sobre campos a rellenar*/
 .formulario__input:focus {
-    border: 3px solid orangered; /*naranja blur para marcar posición -> ok*/
-    outline: none; /*quita un sobreborde del navegador*/
-    box-shadow: 3px 0px 30px brown; /*marrón blur para marcar posición -> atención*/   
+  border: 3px solid orangered; /*naranja blur para marcar posición -> ok*/
+  outline: none; /*quita un sobreborde del navegador*/
+  box-shadow: 3px 0px 30px brown; /*marrón blur para marcar posición -> atención*/
 }
 
 /*ACCESO AL ERROR (mensajes de aviso)*/
 .formulario__input-error {
-    font-size: 12px;
-    margin-bottom: 0;
-    display: none; /*aparece el msj oculto*/
+  font-size: 12px;
+  margin-bottom: 0;
+  display: none; /*aparece el msj oculto*/
 }
 
 /*CONFIGURACION PARA QUE APAREZCA EL MSJ DE ERROR*/
 .formulario__input-error-activo {
- display: block;   
+  display: block;
 }
 
 /*ICONO X configuración*/
 .formulario__validacion-estado {
-    position: absolute;
-    right: 10px; /*coloca el ícono dentro del input de der a izq*/
-    bottom: 15px;
-    z-index: 100;
-    font-size: 16px;
-    opacity: 0; /*opacity para que no se muestre*/
+  position: absolute;
+  right: 10px; /*coloca el ícono dentro del input de der a izq*/
+  bottom: 15px;
+  z-index: 100;
+  font-size: 16px;
+  opacity: 0; /*opacity para que no se muestre*/
 }
 
 /*Accede a las dos ultimas celdas y las separa*/
 .formulario__mensaje,
 .formulario__grupo-btn-enviar {
-    grid-column: span 2;
+  grid-column: span 2;
 }
 
 .formulario__mensaje {
-    height: 45px;
-    line-height: 45px;
-    background-color: pink; /*#f66060;*/
-    padding: 0 15px;
-    border-radius: 3px;
-    display: none; /*msj oculto para que aparezca en ciertos casos*/
+  height: 45px;
+  line-height: 45px;
+  background-color: pink; /*#f66060;*/
+  padding: 0 15px;
+  border-radius: 3px;
+  display: none; /*msj oculto para que aparezca en ciertos casos*/
 }
 
 .formulario__mensaje-activo {
-    display: block;
+  display: block;
 }
 
-.formulario__mensaje p { /*centra el msj ERROR quitando los bordes*/
-    margin: 0;
+.formulario__mensaje p {
+  /*centra el msj ERROR quitando los bordes*/
+  margin: 0;
 }
 
 .formulario__grupo-btn-enviar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*BOTON ENVIAR*/
 .formulario__btn {
-    height: 45px;
-    line-height: 45px;
-    width: 20%; /*New 08.11.23*/ 
-    background-color: white; /*New 08.11.23. Antes: orange*/
-    color: orangered; /*Nw 08.11.23*/
-    font-size: 16px;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer; 
-    transition: background-color 0.3s ease;
+  height: 45px;
+  line-height: 45px;
+  width: 20%; /*New 08.11.23*/
+  background-color: white; /*New 08.11.23. Antes: orange*/
+  color: orangered; /*Nw 08.11.23*/
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .formulario__btn:hover {
-    background-color: brown;
-    color: yellow;
+  background-color: brown;
+  color: yellow;
 }
 
 .formulario__mensaje-exito {
-    font-size: 14px;
-    color: #119200;
-    display: none;
+  font-size: 14px;
+  color: #119200;
+  display: none;
 }
 
 .formulario__mensaje-exito-activo {
-    display: block;
+  display: block;
 }
 
 /*Estilos para Validacion*/
 .formulario__grupo-correcto .formulario__validacion-estado {
-    color: #1ed12d;
-    opacity: 1;
+  color: #1ed12d;
+  opacity: 1;
 }
 
-.formulario__grupo-incorrecto .formulario__label{
-    color: #bb2929;
+.formulario__grupo-incorrecto .formulario__label {
+  color: #bb2929;
 }
 
 .formulario__grupo-incorrecto .formulario__validacion-estado {
-    color: #c63636;
-    opacity: 1;
+  color: #c63636;
+  opacity: 1;
 }
 
 .formulario__grupo-incorrecto .formulario__input {
-    border: 3px solid #bb2929;
+  border: 3px solid #bb2929;
 }
 
 /*Responsive - media queries*/
 /*MOBILE - small devices*/
 @media (max-width: 768px) {
-        .formulario { 
-            grid-template-columns: 1fr;
-        }
-        .formulario__mensaje,
-    .formulario__grupo-btn-enviar {
-        grid-column: 1;
-    }
-    .formulario__btn {
-        width: 100%;
-    }
+  .formulario {
+    grid-template-columns: 1fr;
+  }
+  .formulario__mensaje,
+  .formulario__grupo-btn-enviar {
+    grid-column: 1;
+  }
+  .formulario__btn {
+    width: 100%;
+  }
 }
 /*Nota: el 09.11.23 aprendí sobre MOBILE FIRST (golden rule developer). 
-Los parámetros arriba descriptos son anteriores.*/ 
+Los parámetros arriba descriptos son anteriores.*/

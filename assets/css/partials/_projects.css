@@ -1,170 +1,159 @@
 html {
-    margin: 0;
-    font-family:'Roboto', sans-serif;  
+  margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
-.contenido-video {    /*New 04.11.23. Mejora: La megacaja de contenido p/armonizar el todo*/
-    text-align: center;
-    font: darkblue;
-    padding: 20px; 
-} 
+.contenido-video {
+  /*New 04.11.23. Mejora: La megacaja de contenido p/armonizar el todo*/
+  text-align: center;
+  font: darkblue;
+  padding: 20px;
+}
 
 h2 {
-    text-align: center;
-    font: darkblue;
-    font-size: 24px; /*new 04.11.23*/
-    margin-bottom: 10px; /*new 04.11.23*/
-    padding-top: 20px; /*separación desde header hasta h2*/
-}  
+  text-align: center;
+  font: darkblue;
+  font-size: 24px; /*new 04.11.23*/
+  margin-bottom: 10px; /*new 04.11.23*/
+  padding-top: 20px; /*separación desde header hasta h2*/
+}
 
 .video-container-padre {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; /*Antes: space-around p/ mantenerlo en una sola línea; Antes: center*/
-    margin-top: 20px;
-    margin-bottom: 20px; /*new 04.11.23*/
-}  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /*Antes: space-around p/ mantenerlo en una sola línea; Antes: center*/
+  margin-top: 20px;
+  margin-bottom: 20px; /*new 04.11.23*/
+}
 /*New 04.11.23*/
 .video-contenedor {
-    flex: 1 1 calc(25% - 20px); /*p/ que quepan en una sola línea. Antes: width: calc(50% - 20px)-->2 x línea;*/ 
-    text-align: center;
-    margin: 10px;
-    padding: 10px;
-    box-sizing: border-box; /*W3S: border y padding están incluidos en width y height. No incluye margin.*/
-    /*position: relative; --> no va bien para tener los 4 contenedores en la misma línea*/
-    /*border: 1px solid #ccc; /*para que se aprecie mejor*/
-    background-color: transparent; /*para que se aprecie mejor*/
-    /*max-width: 320px; /*para evitar que los contenedores superpongan... pero no funciona*/
-}  
-
-/*.video {
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%; /*Para asegurar la proporción 16:9
-    position: relative;
-    overflow: hidden; /*¡Así el video no sobrepasa el contenedor!
-    border: 1px solid #ccc; /*para mejorar la visualización
-}*/
+  flex: 1 1 calc(25% - 20px); /*p/ que quepan en una sola línea. Antes: width: calc(50% - 20px)-->2 x línea;*/
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box; /*W3S: border y padding están incluidos en width y height. No incluye margin.*/
+  /*position: relative; --> no va bien para tener los 4 contenedores en la misma línea*/
+  /*border: 1px solid #ccc; /*para que se aprecie mejor*/
+  background-color: transparent; /*para que se aprecie mejor*/
+  /*max-width: 320px; /*para evitar que los contenedores superpongan... pero no funciona*/
+}
 
 .video-responsive-hijo-1,
 .video-responsive-hijo-2,
 .video-responsive-hijo-3,
 .video-responsive-hijo-4 {
-    position: relative; /*Antes:absolute;*/
-    width: 100%; /*para que sea responsive*/
-    height: 0;
-    padding-bottom: 56.25% /*para mantener el aspecto 16:9*/
+  position: relative; /*Antes:absolute;*/
+  width: 100%; /*para que sea responsive*/
+  height: 0;
+  padding-bottom: 56.25%; /*para mantener el aspecto 16:9*/
 }
 
 h3 {
-    text-align: center;
-    font: darkblue;
-    margin-top: 10px; /*para ajustar el margen para el título del video*/
-    margin-bottom: 10px; /*Así hay un poquito de separación desde el ítem anterior*/
-    /*font-size: 18px;*/
-}  
+  text-align: center;
+  font: darkblue;
+  margin-top: 10px; /*para ajustar el margen para el título del video*/
+  margin-bottom: 10px; /*Así hay un poquito de separación desde el ítem anterior*/
+  /*font-size: 18px;*/
+}
 
 .título-video {
-    text-align: center;
-    font: darkblue;
-    font-size: 14px;
-    margin: 15px 0 5px 0; /*15 arriba, 5 abajo, 0 el resto*/
-} 
+  text-align: center;
+  font: darkblue;
+  font-size: 14px;
+  margin: 15px 0 5px 0; /*15 arriba, 5 abajo, 0 el resto*/
+}
 
 .caption-video {
-    text-align: center;
-    font: darkblue;
-    font-size: 14px;
-    margin: 5px 0 5px 0; /*5 arriba, 5 abajo, 0 el resto*/
-} 
+  text-align: center;
+  font: darkblue;
+  font-size: 14px;
+  margin: 5px 0 5px 0; /*5 arriba, 5 abajo, 0 el resto*/
+}
 
 .botón-ver-playlist,
-.botón-all-playlists { /*botoncito para visitar la playlist en cuestión*/
-    display: block;
-    width: 100%; /*la forma de contener el tamaño del botón s/ el contenido*/
-    max-width: 180px; /*para limitar el ancho posible*/ 
-    font-size: 14px; /*achica un poco el botón*/
-    font-weight: bold; /*negrita*/
-    padding: 5px 10px; /*ancho y alto más chicos*/
-    margin-top: 0; 
-    margin-left: auto; /*centrado horizontal*/
-    margin-right: auto; /*centrado horizontal*/
-    text-align: center; /*centrado dentro del botón*/
-    background-color: rgb(240, 240, 201);
-    color: orangered;
-    text-decoration: none;
-    border-radius: 5px; 
-    transition: background-color 0.3s ease;
-} 
+.botón-all-playlists {
+  /*botoncito para visitar la playlist en cuestión*/
+  display: block;
+  width: 100%; /*la forma de contener el tamaño del botón s/ el contenido*/
+  max-width: 180px; /*para limitar el ancho posible*/
+  font-size: 14px; /*achica un poco el botón*/
+  font-weight: bold; /*negrita*/
+  padding: 5px 10px; /*ancho y alto más chicos*/
+  margin-top: 0;
+  margin-left: auto; /*centrado horizontal*/
+  margin-right: auto; /*centrado horizontal*/
+  text-align: center; /*centrado dentro del botón*/
+  background-color: rgb(240, 240, 201);
+  color: orangered;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
 
 .botón-ver-playlist:hover,
 .botón-all-playlists:hover {
-    background-color: brown;
-    color: yellow; 
-} 
+  background-color: brown;
+  color: yellow;
+}
 
 /*New 04.11.23: responsive design --> Responsives con pantalla rotada también*/
 /*PC ESCRITORIO*/
-@media screen and (min-width:769px) {
-    .video-contenedor {
-        width: calc(50% - 20px);
-    }
+@media screen and (min-width: 769px) {
+  .video-contenedor {
+    width: calc(50% - 20px);
+  }
 }
 
 /*MOBILE*/
-@media screen and (max-width:480px) {
-    .video-contenedor {
-        width: calc(100% - 20px);
-    }
-    .video-responsive-hijo-1,
-    .video-responsive-hijo-2,
-    .video-responsive-hijo-3,
-    .video-responsive-hijo-4 {
-        padding-bottom: 75%; /*la idea es que ajuste el aspecto al tamaño del celular*/
-    }
+@media screen and (max-width: 480px) {
+  .video-contenedor {
+    width: calc(100% - 20px);
+  }
+  .video-responsive-hijo-1,
+  .video-responsive-hijo-2,
+  .video-responsive-hijo-3,
+  .video-responsive-hijo-4 {
+    padding-bottom: 75%; /*la idea es que ajuste el aspecto al tamaño del celular*/
+  }
 }
 
 /*TABLET*/
-@media screen and (min-width:481px) and (max-width: 768px) {
-    .video-contenedor {
-        width: calc(50%- 20px);
-    }
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .video-contenedor {
+    width: calc(50%- 20px);
+  }
 }
 /*Nota: el 09.11.23 aprendí sobre MOBILE FIRST (golden rule developer). 
-Los parámetros arriba descriptos son anteriores.*/ 
-
-
-
-
+Los parámetros arriba descriptos son anteriores.*/
 
 /* { 
     box-sizing: border-box;
-  }*/  
+  }*/
 
 /*Flex multilínea (Clase 09. CSS 5)
 .iframe-container-padre {     
     width: 99%; /*Recomendado por Germán/height: auto/500px*/
-    /*max-width: antes: 500px;100px*/    /*height: auto;/ display: flex;  /*horizontal by default
+/*max-width: antes: 500px;100px*/ /*height: auto;/ display: flex;  /*horizontal by default
     display: flex; /*NUEVO 22.10.23  
     box-sizing: border-box; /*W3S: border y padding están incluidos en width y height*/
-        /* no incluye margin. Antes: padding: 50px;*/
-    /*top: 30px; /*relative to 40px-nav
+/* no incluye margin. Antes: padding: 50px;*/
+/*top: 30px; /*relative to 40px-nav
     padding: auto; /*padding-top: auto; ->Recomendado por w3schools para evitar superposición con nav en sticky*/
-   /*flex-direction: row; /*NUEVO 
+/*flex-direction: row; /*NUEVO 
     flex-wrap: nowrap;*/
-        /*Reemplaza a flex-direction: row; y flex wrap: nowrap;
+/*Reemplaza a flex-direction: row; y flex wrap: nowrap;
     flex-flow: row wrap; /*Cont. multilínea: atajo dirección de los ejes. Reemplaza a flex-direction: row/permite desborde.
     /*justify-content: space-evenly; /*center;space-around;space-between* - eje secundario*/
-    /*flex: wrap; /*vs. flex-flow: row wrap:*/
-    /*align-content: center; /*NUEVO REEMPLAZA A STRETCH - Cont. multilínea/Otros: space-around; space-between; center;space-evenly;flext-start*/
-    /*align-items: flex-start; /*antes: baseline;flex-start*/
-    /*flex-wrap:wrap; 
-    /*border: 0px solid yellow;*/ 
-    /*background-color: red;
+/*flex: wrap; /*vs. flex-flow: row wrap:*/
+/*align-content: center; /*NUEVO REEMPLAZA A STRETCH - Cont. multilínea/Otros: space-around; space-between; center;space-evenly;flext-start*/
+/*align-items: flex-start; /*antes: baseline;flex-start*/
+/*flex-wrap:wrap; 
+    /*border: 0px solid yellow;*/
+/*background-color: red;
     margin: 0 auto; /*0 auto: recomendado en materiales suplementarrios*/
-     /*NEW 03.11.23: prueba 5% margin: + responsive*/
-    /* text-align: center;*/
-    /*position:relative;
+/*NEW 03.11.23: prueba 5% margin: + responsive*/
+/* text-align: center;*/
+/*position:relative;
 
 .video-responsive-hijo-1{      
     position: relative;
@@ -176,9 +165,9 @@ Los parámetros arriba descriptos son anteriores.*/
     padding-top:40px;  /*antes: padding: 30px; 10px;
     padding-bottom: 0;
     margin: 3px; /*antes: margin= 3px;*/
-    /*padding-bottom: 56%;*/ 
-    /*flex: 1; /*flex:1;33% -top 99% i.e. 3 in a responsive row*/ 
-    /*font-family: Arial, sans-serif;
+/*padding-bottom: 56%;*/
+/*flex: 1; /*flex:1;33% -top 99% i.e. 3 in a responsive row*/
+/*font-family: Arial, sans-serif;
     display: flex;     /*flex como propiedad hereditaria
     order: 1; 
     /* align-self: flex-start;
@@ -229,13 +218,13 @@ Los parámetros arriba descriptos son anteriores.*/
     flex: 1;
     /*background-color:rgb(245, 245, 92);
     padding-bottom: 5%; /*NUEVO-----antes: padding: 30px;**antes: 10px; 0;*/
-    /*font-family: Arial, sans-serif;*/
-    /*display:block; /*flex como propiedad hereditaria.
+/*font-family: Arial, sans-serif;*/
+/*display:block; /*flex como propiedad hereditaria.
     text-align: center; 
     /*border: 10px; border-color:black;*/
-    /*NUEVO-----box-sizing: relative;///// /*border-box: relative ;
+/*NUEVO-----box-sizing: relative;///// /*border-box: relative ;
     flex-basis: calc(50%-1rem); /*Recomendado en materiales suplementarios*/
-    /*align-items: center;
+/*align-items: center;
 }
 
 .iframe-container-hijo-1 > iframe{
@@ -276,8 +265,7 @@ Los parámetros arriba descriptos son anteriores.*/
     width: 100%;
     padding-bottom: 56.25%; 
     height: 0;
-}*/ 
-
+}*/
 
 /*--Fuentes consultadas:
     -Materiales de referencia y videos YT, CAC Comisión #23526
