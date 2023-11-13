@@ -30,17 +30,23 @@ async function fetchWordDefinition(word) {
 function handleApiResponse(data) {
     // Verificación si la respuesta contiene datos y la estructura necesaria
     //Para saber si es un array, >0  o tiene otro error 
-    if (Array.isArray(data) && data.length > 0 && data[0].shortdef) {
-      // Obtener la información relevante de la respuesta
-      const definition = data[0].shortdef.join(', ');
+  if (Array.isArray(data) && data.length > 0 && data[0].shortdef) {
+       //Verificar si shortdef es un array
+    if (Array.isArray(data[0].shortdef)) {
+        // Obtener la información relevante de la respuesta
+        const definition = data[0].shortdef.join(', ');
   
-      // Llamar a la función para mostrar la información al usuario
+        // Llamar a la función para mostrar la información al usuario
       displayDefinition(definition);
     } else {
       // En caso de una respuesta vacía, mostrar un mensaje al usuario
-      displayError('No hay información para la palabra que buscas.');
+      displayError('El formato de la respuesta no es el esperado.');
     }
-  }
+ } else {
+    // En caso de respuesta vacía o con estructura incorrecta, muestra mensaje al usuario
+   displayError('No hay información para la palabra que buscas.');
+ }
+}
   
   // Función para mostrar la definición al usuario
   function displayDefinition(definition) {
