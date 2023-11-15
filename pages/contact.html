@@ -88,11 +88,17 @@
         <div class="formulario__principal">
           <h2>Contacto 24 x 7</h2>
           <p>Te responderé el mismo día</p>
-          <form action="" class="formulario" id="formulario">
+          <!--Formspree para envío de formulario de feedback-->
+          <form
+            action="https://formspree.io/f/xgejbagw"
+            method="POST"
+            class="formulario"
+            id="formulario"><label for="email">Your Email</label>
             <!--Grupo: nombre-->
             <div class="formulario__grupo" id="grupo__nombre">
               <label for="nombre" class="formulario__label"
-                >Tu nombre y apellido <i class="fa-regular fa-id-card fa-fade"></i
+                >Tu nombre y apellido *
+                <i class="fa-regular fa-id-card fa-fade"></i
               ></label>
               <div class="formulario__grupo-input">
                 <input
@@ -100,23 +106,22 @@
                   class="formulario__input"
                   name="nombre"
                   id="nombre"
-                  placeholder="Jane Doe"
+                  placeholder="Gabriel González"
                 />
-                <!--Jane Doe nombre de ejemplo-->
+                <!--Gabriel González es un nombre de ejemplo-->
                 <i
                   class="formulario__validacion-estado fa-solid fa-circle-xmark"
                 ></i>
               </div>
               <p class="formulario__input-error">
-                Los datos proporcionados pueden contener, al menos, 40
-                caracteres.
+                Los datos proporcionados deben tener aprox. 40 caracteres.
               </p>
             </div>
 
             <!--Grupo: Correo Electrónico-->
             <div class="formulario__grupo" id="grupo__correo">
               <label for="correo" class="formulario__label"
-                >Tu correo electrónico <i class="fa-solid fa-at fa-fade"></i
+                >Tu correo electrónico * <i class="fa-solid fa-at fa-fade"></i
               ></label>
               <div class="formulario__grupo-input">
                 <input
@@ -131,15 +136,15 @@
                 ></i>
               </div>
               <p class="formulario__input-error">
-                El correo solo puede contener letras, números, puntos, guiones y
-                guión bajo.
+                El correo sólo puede tener letras, números, puntos, guión medio
+                y guión bajo.
               </p>
             </div>
 
             <!--Grupo: País-->
             <div class="formulario__grupo" id="grupo__pais">
               <label for="pais" class="formulario__label"
-                >Tu país <i class="fa-regular fa-flag fa-fade"></i
+                >Tu país * <i class="fa-regular fa-flag fa-fade"></i
               ></label>
               <div class="formulario__grupo-input">
                 <input
@@ -149,7 +154,7 @@
                   id="pais"
                   placeholder="Argentina"
                 />
-                <!--Jane Doe nombre de ejemplo-->
+                <!--Email de ejemplo-->
                 <i
                   class="formulario__validacion-estado fa-solid fa-circle-xmark"
                 ></i>
@@ -162,7 +167,7 @@
             <!--Grupo: Telefono-->
             <div class="formulario__grupo" id="grupo__telefono">
               <label for="telefono" class="formulario__label"
-                >Tu teléfono <i class="fa-solid fa-phone-volume fa-fade"></i
+                >Tu teléfono * <i class="fa-solid fa-phone-volume fa-fade"></i
               ></label>
               <div class="formulario__grupo-input">
                 <input
@@ -170,12 +175,14 @@
                   class="formulario__input"
                   name="telefono"
                   id="telefono"
-                  placeholder="3444477323843"
+                  placeholder="11477323843876"
                 />
-                <i class="formulario__validacion-estado fa-phone-flip"></i>
+                <i
+                  class="formulario__validacion-estado fa-solid fa-circle-xmark"
+                ></i>
               </div>
               <p class="formulario__input-error">
-                El teléfono solo puede contener números y el máximo es de 14
+                El teléfono solo puede tener números y el máximo es de 14
                 dígitos.
               </p>
             </div>
@@ -183,24 +190,26 @@
             <!--Grupo: Mensaje-->
             <div class="formulario__grupo" id="grupo__mensaje">
               <label for="mensaje" class="formulario__label"
-                >Tu mensaje <i class="fa-regular fa-message fa-fade" style="color: #00008b;"></i>
-                <!--<i class="fa-regular fa-face-smile-wink"></i
-              >--></label
-              >
+                >Tu mensaje *
+                <i
+                  class="fa-regular fa-message fa-fade"
+                  style="color: #00008b"
+                ></i
+              ></label>
               <div class="formulario__grupo-input">
                 <input
                   type="text"
                   class="formulario__input"
                   id="mensaje"
                   name="mensaje"
-                  placeholder="Deja tu mensaje (máx. 30 caracteres)"
+                  placeholder="Escribe una nota."
                 />
                 <i
                   class="formulario__validacion-estado fa-solid fa-circle-xmark"
                 ></i>
               </div>
               <p class="formulario__input-error">
-                Tu mensaje debe contener algo.
+                Por favor escribe un mensaje (máx. 30 caracteres).
               </p>
             </div>
 
@@ -208,7 +217,7 @@
             <div class="formulario__mensaje" id="formulario__mensaje">
               <p>
                 <i class="fa-solid fa-circle-exclamation fa-fade"></i>
-                <b>Error:</b> ¡Completa todos los campos!
+                <b>Error:</b> ¡Por favor revisa los campos!
               </p>
             </div>
 
@@ -250,7 +259,9 @@
         </li>
       </ul>
       <p class="texto-footer">&copy; 2023 Silvina V. González Lorenzo</p>
-      <p class="texto-footer">Developed exclusively for Silvina V. González Lorenzo</p>
+      <p class="texto-footer">
+        Developed exclusively for Silvina V. González Lorenzo
+      </p>
     </footer>
   </body>
 </html>
