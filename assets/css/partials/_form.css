@@ -52,7 +52,7 @@
 .formulario__principal p {
   /*Te responderé en el mismo día*/
   color: orangered; /*antes: darkblue;*/
-  font-size: 16px;
+  font-size: 14px;
   padding-bottom: 10px; /*para separar desde este punto de ref. hacia abajo*/
   /*font-weight: bold;*/
 }

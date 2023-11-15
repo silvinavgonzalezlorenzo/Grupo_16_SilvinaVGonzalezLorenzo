@@ -72,6 +72,7 @@
 
     <!--Nuevo 10.11.23-->
     <main>
+      <!--MAIN: mi "carta de presentación en imágenes"-->
       <div class="bio-container-padre">
         <!--bio-contenedor 1/8-->
         <!--Posicionamiento SEO h1 + h2-->
@@ -217,6 +218,31 @@
           >
         </div>
       </div>
+
+      <!-- API Pública: Merriam-Webster Learner's Dictionary-->
+      <!--integrada con: Silvina's Word of the Year from Merriam-Webster-->
+      <div id="loadingMessage" class="loader">My Word of the Year 2023...</div>
+      <!--<div class="merriamWebsterLogo logo-in-loading"
+          img src="./images/Home/Merriam-Webster_Logo.png"
+          alt="Merriam-Webster logo public domain"/>
+        </div>--><!--logo de Merriam-Webster para más formalidad-->
+
+      <!--*barra indicadora de progreso en carga de API-->
+      <!--Buenas prácticas: funcionalidad separada de la anterior-->
+      <div id="definitionContainer" class="wordContainer">
+        <!--Word of the Year-->
+        <p class="wordoftheYear">from The Merriam-Webster Dictionary API:</p>
+        <p class="word">algorithm</p>
+        <p id="definition" class="definition">
+          Definición obtenida gracias a una API
+        </p>
+
+        <script src="./JS/apis.js"></script>
+        <!--<script src="./JS/apiStyles.js"></script> 
+          //apiStyles.js da errores diversos.
+          Se transfiere el style del contenedor para la API a css.*/
+        <!-- API al final: buena práctica -->
+      </div>
     </main>
 
     <footer>
@@ -239,7 +265,9 @@
         </li>
       </ul>
       <p class="texto-footer">&copy; 2023 Silvina V. González Lorenzo</p>
-      <p class="texto-footer">Developed exclusively for Silvina V. González Lorenzo</p>
+      <p class="texto-footer">
+        Developed exclusively for Silvina V. González Lorenzo
+      </p>
     </footer>
   </body>
 </html>
