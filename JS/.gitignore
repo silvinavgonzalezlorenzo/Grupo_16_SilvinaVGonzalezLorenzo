@@ -2,6 +2,9 @@
 #Archivo preparado para información sensible presente y futura
 
 # Ignorar información sensible sobre las API (API-related sensitive information)
+# .gitignore
+dataSensible.js
+
 api-keys.json       
 credentials/ 
 
