@@ -19,4 +19,5 @@ TPO de CAC:
 15.11.23: Corrección de fallo de la prueba de conexión del formulario de contacto Formspree con el correo electrónico. Se "comentó" el código de conexión con Formspree hasta que se encuentre el error que no permite integrar la acción con el formulario de contacto ya existente. Se deja el código generado por Formspree en "comentario" y se contacta al Help de Formspree para encontrar juntos la solución. 
 
 17-20.11.23: Formulario de contacto: mejoras en el contenido del HTML. Nuevas pruebas en consola: recibidas. También recibidas en e-mail de contacto las pruebas hechas con Wyatt, Developer de Formspree, luego de varios ajustes en el HTML, CSS y JS.
--Copyright: nota de propiedad intelectual protegida: actualizada de acuerdo con la Ley 11723.
+-Copyright: Nota de propiedad intelectual protegida: actualizada de acuerdo con la Ley 11723.
+-Web en Netlify: Actualización manual del sitio usando "Drag & Drop" para mantener el nombre. 
