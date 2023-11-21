@@ -12,7 +12,7 @@ footer {
 footer ul li a {
   color: var(--primary-color);
   margin: 1px 0px; /*Espacio e/ íconos: margen 1 arriba y abajo, y 0 a la derecha e izq.*/
-  font-size: 20px; /*20px es tamaño de los íconos*/
+  font-size: 18px; /*20px es tamaño de los íconos*/
   /*margin: 0; New 07.11.23*/
 }
 
@@ -23,11 +23,17 @@ footer ul {
   justify-content: center;
 }
 
-.texto-footer {
+.texto-footer,
+.texto-footer2 {
   color: orangered; /*DARKBLUE: rgb(0, 0, 139)*/
   text-align: center;
   font-family: "Roboto", sans-serif;
 }
+
+.texto-footer2 {
+  font-size: 15px; /*20px es tamaño de los íconos*/
+}
+
 
 /*New 05.11.23: Traído de headers.css -- para unificar criterios.
 Responsive design --> Teóricamente responsives con pantalla rotada también*/

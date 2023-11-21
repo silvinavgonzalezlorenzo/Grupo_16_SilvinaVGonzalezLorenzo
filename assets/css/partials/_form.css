@@ -3,7 +3,7 @@
   /*background-color: #1ed12d;*/
   max-width: 600px;
   width: 100%;
-  padding-top: 56, 25%; /*conserva la relación 16:9*/
+  padding-top: 20px; /*conserva la relación 16:9*/
   position: relative;
   margin: 0 auto; /*centrado horizontal*/
   /*justify-content: center;*/
@@ -210,5 +210,3 @@
     width: 100%;
   }
 }
-/*Nota: el 09.11.23 aprendí sobre MOBILE FIRST (golden rule developer). 
-Los parámetros arriba descriptos son anteriores.*/
