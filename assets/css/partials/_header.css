@@ -29,7 +29,7 @@
   /*menú en la barra en general*/
   display: flex;
   /*New 05.11.23: no parece hacer falta: flex-direction: row;*/
-  gap: 40px;
+  gap: 35px;
   /*transition: background-color 0.3s ease; /*No va acá*/
 }
 
@@ -73,6 +73,9 @@
 
 /*TABLET*/ /*Again, sólo breakpoint*/
 @media screen and (min-width: 481px) and (max-width: 768px) {
+  .navbar-menu ul {
+    gap: 28px;
+  }   
 }
 /*Nota: el 09.11.23 aprendí sobre MOBILE FIRST (golden rule developer). 
 Los parámetros arriba descriptos son anteriores.*/

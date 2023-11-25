@@ -21,3 +21,5 @@ TPO de CAC:
 17-20.11.23: Formulario de contacto: mejoras en el contenido del HTML. Nuevas pruebas en consola: recibidas. También recibidas en e-mail de contacto las pruebas hechas con Wyatt, Developer de Formspree, luego de varios ajustes en el HTML, CSS y JS.
 -Copyright: Nota de propiedad intelectual protegida: actualizada de acuerdo con la Ley 11723.
 -Web en Netlify: Actualización manual del sitio usando "Drag & Drop" para mantener el nombre. 
+
+25.11.23: Ajustes en <nav>: gap entre íconos de 40px a 35px y 28px para Responsive Mobile. Ajustes en footer: animación del ícono de Copyright (C).
