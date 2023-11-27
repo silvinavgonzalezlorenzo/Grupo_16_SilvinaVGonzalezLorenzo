@@ -71,7 +71,7 @@
   cursor: pointer;
 }
 
-.formulario__grupo-input {
+.formularioGrupo-input {
   position: relative;
 }
 
@@ -91,11 +91,11 @@
 /*Transición cuando se hace click sobre campos a rellenar*/
 .formulario__input:focus {
   border: 3px solid orangered; /*naranja blur para marcar posición -> ok*/
-  outline: none; /*quita un sobreborde del navegador*/
+  outline: none; /*quita el sobreborde del navegador*/
   box-shadow: 3px 0px 30px brown; /*marrón blur para marcar posición -> atención*/
 }
 
-/*ACCESO AL ERROR (mensajes de aviso)*/
+/*Aviso de error*/
 .formulario__input-error {
   font-size: 12px;
   margin-bottom: 0;
@@ -119,7 +119,7 @@
 
 /*Accede a las dos ultimas celdas y las separa*/
 .formulario__mensaje,
-.formulario__grupo-btn-enviar {
+.formSend {
   grid-column: span 2;
 }
 
@@ -141,7 +141,7 @@
   margin: 0;
 }
 
-.formulario__grupo-btn-enviar {
+.formSend {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -169,7 +169,7 @@
 
 .formulario__mensaje-exito {
   font-size: 14px;
-  color: #119200;
+  color: rgb(8,255,8); /*FLUOR GREEN: del borde de cada casilla rellenada*/
   display: none;
 }
 
@@ -177,33 +177,33 @@
   display: block;
 }
 
-/*Estilos para Validacion*/
-.formulario__grupo-correcto .formulario__validacion-estado {
-  color: #1ed12d;
+/*Validación de datos*/
+.formularioGrupo-correcto .formulario__validacion-estado {
+  color: rgb(8,255,8); /*FLUOR GREEN*/
   opacity: 1;
 }
 
-.formulario__grupo-incorrecto .formulario__label {
+.formularioGrupo-incorrecto .formulario__label {
   color: #bb2929;
 }
 
-.formulario__grupo-incorrecto .formulario__validacion-estado {
+.formularioGrupo-incorrecto .formulario__validacion-estado {
   color: #c63636;
   opacity: 1;
 }
 
-.formulario__grupo-incorrecto .formulario__input {
+.formularioGrupo-incorrecto .formulario__input {
   border: 3px solid #bb2929;
 }
 
 /*Responsive - media queries*/
-/*MOBILE - small devices*/
+/*MOBILE y/o otros "small devices" (tamaño "inclusivo" generalizado*/
 @media (max-width: 768px) {
   .formulario {
     grid-template-columns: 1fr;
   }
   .formulario__mensaje,
-  .formulario__grupo-btn-enviar {
+  .formSend {
     grid-column: 1;
   }
   .formulario__btn {
