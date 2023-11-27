@@ -91,24 +91,25 @@
           <!--Formspree para envío de formulario de feedback:-->
           <!--<form action="https://formspree.io/f/xgejbagw" method="POST" class= ..... 
           id="formulario"><label for="email">Your Email</label> -->
-          <form action="https://formspree.io/f/xgejbagw" method="POST" class="formulario" id="formulario"> <!--Prueba 20.11.23-->
+          <!--<form action="https://formspree.io/f/xgejbagw" method="POST" class="formulario" id="formulario"> <!--Prueba 20.11.23-->
+          <form class="formulario" id="formulario" method="POST" netlify>
+            
             <!--Grupo: nombre-->
-            <div class="formulario__grupo" id="grupo__nombre">
+            <div class="formularioGrupo" id="grupo__nombre">
               <label for="nombre" class="formulario__label"
-                >Tu nombre y apellido *
-                <i class="fa-regular fa-id-card fa-fade"></i
+                >Tu nombre y apellido * <i class="fa-regular fa-id-card fa-fade"></i
               ></label>
-              <div class="formulario__grupo-input">
+              <div class="formularioGrupo-input">
                 <input
-                  type="text"
-                  class="formulario__input"
-                  name="nombre"
-                  id="nombre"
-                  placeholder="Ridley Scott"
-                />
-                <!--Gabriel González es un nombre de ejemplo-->
+                type="nombre"
+                class="formulario__input"
+                name="nombre"
+                id="nombre"
+                placeholder="Ridley Scott"
+              />
+                <!--Ridley Scott es un nombre de ejemplo-->
                 <i
-                  class="formulario__validacion-estado fa-solid fa-circle-xmark"
+                  class="formulario__validacion-estado fa-solid fa-circle-exclamation"
                 ></i>
               </div>
               <p class="formulario__input-error">
@@ -117,11 +118,11 @@
             </div>
 
             <!--Grupo: Correo Electrónico-->
-            <div class="formulario__grupo" id="grupo__correo">
+            <div class="formularioGrupo" id="grupo__correo">
               <label for="correo" class="formulario__label"
                 >Tu correo electrónico * <i class="fa-solid fa-at fa-fade"></i
               ></label>
-              <div class="formulario__grupo-input">
+              <div class="formularioGrupo-input">
                 <input
                   type="email"
                   class="formulario__input"
@@ -130,7 +131,7 @@
                   placeholder="ridleyscottcreativegroup@rscg.com"
                 />
                 <i
-                  class="formulario__validacion-estado fa-solid fa-circle-xmark"
+                  class="formulario__validacion-estado fa-solid fa-circle-exclamation"
                 ></i>
               </div>
               <p class="formulario__input-error">
@@ -140,11 +141,11 @@
             </div>
 
             <!--Grupo: País-->
-            <div class="formulario__grupo" id="grupo__pais">
+            <div class="formularioGrupo" id="grupo__pais">
               <label for="pais" class="formulario__label"
                 >Tu país * <i class="fa-regular fa-flag fa-fade"></i
               ></label>
-              <div class="formulario__grupo-input">
+              <div class="formularioGrupo-input">
                 <input
                   type="text"
                   class="formulario__input"
@@ -154,7 +155,7 @@
                 />
                 <!--Email de ejemplo-->
                 <i
-                  class="formulario__validacion-estado fa-solid fa-circle-xmark"
+                  class="formulario__validacion-estado fa-solid fa-circle-exclamation"
                 ></i>
               </div>
               <p class="formulario__input-error">
@@ -163,11 +164,11 @@
             </div>
 
             <!--Grupo: Telefono-->
-            <div class="formulario__grupo" id="grupo__telefono">
+            <div class="formularioGrupo" id="grupo__telefono">
               <label for="telefono" class="formulario__label"
                 >Tu teléfono * <i class="fa-solid fa-phone-volume fa-fade"></i
               ></label>
-              <div class="formulario__grupo-input">
+              <div class="formularioGrupo-input">
                 <input
                   type="text"
                   class="formulario__input"
@@ -176,7 +177,7 @@
                   placeholder="442074377426"
                 />
                 <i
-                  class="formulario__validacion-estado fa-solid fa-circle-xmark"
+                  class="formulario__validacion-estado fa-solid fa-circle-exclamation"
                 ></i>
               </div>
               <p class="formulario__input-error">
@@ -186,7 +187,7 @@
             </div>
 
             <!--Grupo: Mensaje-->
-            <div class="formulario__grupo" id="grupo__mensaje">
+            <div class="formularioGrupo" id="grupo__mensaje">
               <label for="mensaje" class="formulario__label"
                 >Tu mensaje *
                 <i
@@ -194,7 +195,7 @@
                   style="color: #00008b"
                 ></i
               ></label>
-              <div class="formulario__grupo-input">
+              <div class="formularioGrupo-input">
                 <input
                   type="text"
                   class="formulario__input"
@@ -203,7 +204,7 @@
                   placeholder="Escribe tu mensaje aquí."
                 />
                 <i
-                  class="formulario__validacion-estado fa-solid fa-circle-xmark"
+                  class="formulario__validacion-estado fa-solid fa-circle-exclamtion"
                 ></i>
               </div>
               <p class="formulario__input-error">
@@ -219,7 +220,7 @@
               </p>
             </div>
 
-            <div class="formulario__grupo formulario__grupo-btn-enviar">
+            <div class="formSend">
               <button type="submit" class="formulario__btn">
                 <b>Enviar</b>
               </button>
