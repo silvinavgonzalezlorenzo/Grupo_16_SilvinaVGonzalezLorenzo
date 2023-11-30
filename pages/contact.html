@@ -85,44 +85,52 @@
           <p>¡Mi oficina está a sólo dos calles del Santiago Bernabéu!</p>
         </div>
         <br /><br />
+
         <div class="formulario__principal">
           <h2>Contacto 24 x 7</h2>
           <p>¡Te responderé el mismo día!</p>
-          <!--Formspree para envío de formulario de feedback:-->
-          <!--<form action="https://formspree.io/f/xgejbagw" method="POST" class= ..... 
-          id="formulario"><label for="email">Your Email</label> -->
-          <!--<form action="https://formspree.io/f/xgejbagw" method="POST" class="formulario" id="formulario"> <!--Prueba 20.11.23-->
-          <form class="formulario" id="formulario" method="POST" netlify>
-            
+          <!--Antes: Formspree para envío de formulario de feedback:-->
+          <form
+            name="contact"
+            class="formulario"
+            id="formulario"
+            method="POST"
+            data-netlify="true"
+          >
             <!--Grupo: nombre-->
-            <div class="formularioGrupo" id="grupo__nombre">
+            <div class="formulario__grupo" id="grupo__nombre">
               <label for="nombre" class="formulario__label"
-                >Tu nombre y apellido * <i class="fa-regular fa-id-card fa-fade"></i
-              ></label>
-              <div class="formularioGrupo-input">
+                >Tu nombre y apellido *
+                <!--Validación: éxito-->
+                <i class="fa-regular fa-id-card fa-fade"></i>
+                <i class="formulario__validacion-estado"></i>
+              </label>
+              <div class="formulario__grupo-input">
                 <input
-                type="nombre"
-                class="formulario__input"
-                name="nombre"
-                id="nombre"
-                placeholder="Ridley Scott"
-              />
+                  type="text"
+                  class="formulario__input"
+                  name="nombre"
+                  id="nombre"
+                  placeholder="Ridley Scott"
+                />
                 <!--Ridley Scott es un nombre de ejemplo-->
-                <i
-                  class="formulario__validacion-estado fa-solid fa-circle-exclamation"
-                ></i>
+                <!--Validación: error-->
+                <i class="formulario__validacion-estado"></i>
               </div>
               <p class="formulario__input-error">
-                Los datos proporcionados deben tener unos 40 caracteres.
+                Por favor deja aquí un nombre y/o apellido.
               </p>
             </div>
 
             <!--Grupo: Correo Electrónico-->
-            <div class="formularioGrupo" id="grupo__correo">
+            <div class="formulario__grupo" id="grupo__correo">
               <label for="correo" class="formulario__label"
-                >Tu correo electrónico * <i class="fa-solid fa-at fa-fade"></i
+                >Tu correo electrónico *
+                <!--Validación: éxito-->
+                <i class="fa-solid fa-at fa-fade"></i>
+                <i class="formulario__validacion-estado"></i
               ></label>
-              <div class="formularioGrupo-input">
+              <div class="formulario__grupo-input">
                 <input
                   type="email"
                   class="formulario__input"
@@ -130,22 +138,21 @@
                   id="correo"
                   placeholder="ridleyscottcreativegroup@rscg.com"
                 />
-                <i
-                  class="formulario__validacion-estado fa-solid fa-circle-exclamation"
-                ></i>
+                <!--Validación: error-->
+                <i class="formulario__validacion-estado"></i>
               </div>
-              <p class="formulario__input-error">
-                El correo sólo puede tener letras, números, puntos, guión medio
-                y guión bajo.
-              </p>
+              <p class="formulario__input-error">Por favor escribe un mail.</p>
             </div>
 
             <!--Grupo: País-->
-            <div class="formularioGrupo" id="grupo__pais">
+            <div class="formulario__grupo" id="grupo__pais">
               <label for="pais" class="formulario__label"
-                >Tu país * <i class="fa-regular fa-flag fa-fade"></i
-              ></label>
-              <div class="formularioGrupo-input">
+                >Tu país *
+                <!--Validación: éxito-->
+                <i class="fa-regular fa-flag fa-fade"></i>
+                <i class="formulario__validacion-estado"></i>
+              </label>
+              <div class="formulario__grupo-input">
                 <input
                   type="text"
                   class="formulario__input"
@@ -153,22 +160,23 @@
                   id="pais"
                   placeholder="Reino Unido"
                 />
-                <!--Email de ejemplo-->
-                <i
-                  class="formulario__validacion-estado fa-solid fa-circle-exclamation"
-                ></i>
+                <!--Validación: error-->
+                <i class="formulario__validacion-estado"></i>
               </div>
               <p class="formulario__input-error">
-                Indica tu país de residencia.
+                Por favor indica país de residencia.
               </p>
             </div>
 
-            <!--Grupo: Telefono-->
-            <div class="formularioGrupo" id="grupo__telefono">
+            <!--Grupo: teléfono-->
+            <div class="formulario__grupo" id="grupo__telefono">
               <label for="telefono" class="formulario__label"
-                >Tu teléfono * <i class="fa-solid fa-phone-volume fa-fade"></i
-              ></label>
-              <div class="formularioGrupo-input">
+                >Tu teléfono *
+                <!--Validación: éxito-->
+                <i class="fa-solid fa-phone-volume fa-fade"></i>
+                <i class="formulario__validacion-estado"></i>
+              </label>
+              <div class="formulario__grupo-input">
                 <input
                   type="text"
                   class="formulario__input"
@@ -176,54 +184,46 @@
                   id="telefono"
                   placeholder="442074377426"
                 />
-                <i
-                  class="formulario__validacion-estado fa-solid fa-circle-exclamation"
-                ></i>
+                <!--Validación: error-->
+                <i class="formulario__validacion-estado"></i>
               </div>
               <p class="formulario__input-error">
-                El teléfono solo puede tener números y el máximo es de 14
-                dígitos.
+                Por favor deja un teléfono (máx. 14 números).
               </p>
             </div>
 
             <!--Grupo: Mensaje-->
-            <div class="formularioGrupo" id="grupo__mensaje">
+            <div class="formulario__grupo" id="grupo__mensaje">
               <label for="mensaje" class="formulario__label"
-                >Tu mensaje *
-                <i
-                  class="fa-regular fa-message fa-fade"
-                  style="color: #00008b"
-                ></i
-              ></label>
-              <div class="formularioGrupo-input">
-                <input
+                >Tu mensaje 
+                <!--Validación: éxito-->
+                <i class="fa-regular fa-message fa-fade"></i>
+                <i class="formulario__validacion-estado"></i>
+              </label>
+              <div class="formulario__grupo-input">
+                <textarea
                   type="text"
                   class="formulario__input"
                   id="mensaje"
                   name="mensaje"
                   placeholder="Escribe tu mensaje aquí."
-                />
-                <i
-                  class="formulario__validacion-estado fa-solid fa-circle-exclamation"
-                ></i>
+                ></textarea>
+                <!--Validación: error-->
+                <i class="formulario__validacion-estado"></i>
               </div>
+              <p class="formulario__input-error">Por favor deja un mensaje.</p>
+            </div>
+
+            <!-- Contenedor de mensajes de error-->
+            <div class="formulario__mensaje">
               <p class="formulario__input-error">
-                Por favor escribe un nota de menos de 30 caracteres.
+                <b>Error:</b> Por favor revisa si completaste bien todos los
+                campos.
               </p>
             </div>
 
-            <!-- Grupo Error-->
-            <div class="formulario__mensaje" id="formulario__mensaje">
-              <p>
-                <i class="fa-solid fa-circle-exclamation fa-fade"></i>
-                <b>Error:</b> ¡Por favor revisa los campos!
-              </p>
-            </div>
-
-            <div class="formSend">
-              <button type="submit" class="formulario__btn">
-                <b>Enviar</b>
-              </button>
+            <div class="formulario__grupo" id="formulario__enviar">
+              <button type="submit" class="formulario__btn">Enviar</button>
               <p
                 class="formulario__mensaje-exito"
                 id="formulario__mensaje-exito"
@@ -236,7 +236,7 @@
       </div>
     </main>
 
-    <script src="../JS/form.js"></script> 
+    <script src="../JS/form.js"></script>
 
     <footer>
       <ul>
@@ -257,10 +257,16 @@
           ></a>
         </li>
       </ul>
-      <p class="texto-footer"><i class="fa-regular fa-copyright fa-fade" style="color: #ff4500"></i> 2023 Silvina V. González Lorenzo</p>
       <p class="texto-footer">
-        Developed exclusively for Silvina V. González Lorenzo</p>
-      <p class="texto-footer2">Prohibida su reproducción total o parcial (Ley 11723)</p>
+        <i class="fa-regular fa-copyright fa-fade" style="color: #ff4500"></i>
+        2023 Silvina V. González Lorenzo
+      </p>
+      <p class="texto-footer">
+        Developed exclusively for Silvina V. González Lorenzo
+      </p>
+      <p class="texto-footer2">
+        Prohibida su reproducción total o parcial (Ley 11723)
+      </p>
     </footer>
   </body>
 </html>
