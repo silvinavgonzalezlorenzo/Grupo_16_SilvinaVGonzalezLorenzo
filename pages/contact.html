@@ -98,6 +98,12 @@
             data-netlify="true"
           > <!--Input oculto que pide Netlify-->
             <input type="hidden" name="form-name" value="contact" />
+            <!-- Campo Honeypot: Campo oculto para los usuarios para detectar envíos automáticos de bots -->
+            <div style="display: none;" aria-hidden="true">
+              <label>
+                No completes este campo si eres un ser humano: <input name="bot-field" />
+              </label>
+            </div>
 
             <!--Grupo: nombre-->
             <div class="formulario__grupo" id="grupo__nombre">
