@@ -23,3 +23,5 @@ TPO de CAC:
 -Web en Netlify: Actualización manual del sitio usando "Drag & Drop" para mantener el nombre. 
 
 25.11.23: Ajustes en nav: gap entre íconos de 40px a 35px y 28px para Responsive Mobile. Ajustes en footer: animación del ícono de Copyright (C).
+
+30.11.23: Introducción de nuevas mejoras en toda la sección de contacto: contact.html, form.css y form.js que incluyen contenido, estructura, legibilidad, organización, mensajes con el usuario, validación, reseteos al completar el envío, alertas.
