@@ -1,5 +1,6 @@
-// Reemplazo de 'YOUR_MERRIAM_WEBSTER_API_KEY' por mi API key
-const apiKey = "691f973f-6746-45f7-9c56-751e8543fe7c";
+// Reemplazo de 'YOUR_MERRIAM_WEBSTER_API_KEY' por mi acceso a la API key (pública) desde .env
+const apiKey = process.env.REACT_APP_API_KEY;
+
 const definitionContainer = document.getElementById("definitionContainer");
 
 document.addEventListener("DOMContentLoaded", function () {
