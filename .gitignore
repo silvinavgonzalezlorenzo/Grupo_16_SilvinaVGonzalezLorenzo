@@ -3,12 +3,13 @@
 
 # Ignorar información sensible sobre las API (API-related sensitive information)
 # .gitignore
+.env 
+
 dataSensible.js
 
 api-keys.json       
 credentials/ 
 
-.env
 
 # Ignorar el directorio 'secrets' 
 secrets/
