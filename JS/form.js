@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function () {
     // Para traer el formulario por su ID
     const formulario = document.getElementById('formulario');
@@ -114,3 +115,4 @@ document.addEventListener('DOMContentLoaded', function () {
     inputMensaje.addEventListener('input', validarFormulario);
   });
   
+// Versión 01.12.23
