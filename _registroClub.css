@@ -1,0 +1,96 @@
+
+
+/* R E G I S T R O */
+.formulario__registro {
+  /*¡Escríbeme 24 x 7!*/
+  max-width: 600px;
+  width: 100%;
+  padding: 30px;
+  padding-top: 10px; /*sobreescribe la propiedad anterior: sólo "top"*/
+  display: grid;
+  border-radius: 5px;
+  background-color: rgb(240, 240, 201); /*Background formulario*/
+  text-align: center;
+  margin: auto; /*15 arriba, 5 abajo, 0 el resto. Antes: auto;*/
+  margin-bottom: 5%; /*separación con el footer*/
+}
+
+.formulario__registro p { /*título*/
+  /*Te responderé en el mismo día*/
+  color: orangered; /*antes: darkblue;*/
+  font-size: 14px;
+  padding-bottom: 10px; /*para separar desde este punto de ref. hacia abajo*/
+  /*font-weight: bold;*/
+}
+
+.formulario { /*class del formulario_registro*/
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.formulario__label {
+  /*block: ocupa el 100%*/
+  display: block;
+  font-weight: 700; /*Coloca letras en negrita*/
+  padding: 10px;
+  cursor: pointer;
+}
+
+.formulario__grupo-input {
+  position: relative;
+}
+
+.formulario__input {
+  /*cambia los espacios a rellenar*/
+  width: 100%;
+  background: #fff; /*relleno del input*/
+  border: 3px solid transparent;
+  border-radius: 3px;
+  /*height y line-height es para que el texto quede centrado*/
+  height: 45px;
+  line-height: 45px;
+  padding: 0 40px 0 10px; /*arriba derecha abajo izquierda*/
+  transition: 0.3s ease all; /*AVERIGUAR QUE ES??*/
+}
+
+.formulario__grupo-btn-enviar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*BOTON ENVIAR*/
+.formulario__btn {
+  height: 45px;
+  line-height: 45px;
+  width: 20%; /*New 08.11.23*/
+  background-color: white; /*New 08.11.23. Antes: orange*/
+  color: orangered; /*New 08.11.23*/
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario__btn:hover {
+  background-color: brown;
+  color: yellow;
+}
+
+/*Responsive - media queries*/
+/*MOBILE - small devices*/
+@media (max-width: 768px) {
+  .formulario {
+    grid-template-columns: 1fr;
+  }
+  .formulario__mensaje,
+  .formulario__grupo-btn-enviar {
+    grid-column: 1;
+  }
+  .formulario__btn {
+    width: 100%;
+  }
+}
