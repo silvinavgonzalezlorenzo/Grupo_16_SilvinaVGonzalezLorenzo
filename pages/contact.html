@@ -96,12 +96,14 @@
             id="formulario"
             method="POST"
             data-netlify="true"
-          > <!--Input oculto que pide Netlify-->
+          >
+            <!--Input oculto que pide Netlify-->
             <input type="hidden" name="form-name" value="contact" />
             <!-- Campo Honeypot: Campo oculto para los usuarios para detectar envíos automáticos de bots -->
-            <div style="display: none;" aria-hidden="true">
+            <div style="display: none" aria-hidden="true">
               <label>
-                No completes este campo si eres un ser humano: <input name="bot-field" />
+                No completes este campo si eres un ser humano:
+                <input name="bot-field" />
               </label>
             </div>
 
@@ -110,8 +112,8 @@
               <label for="nombre" class="formulario__label"
                 >Tu nombre y apellido *
                 <!--Validación: éxito-->
-                <i class="fa-regular fa-id-card fa-fade"></i>
-                <i class="formulario__validacion-estado"></i>
+                <!--<i class="fa-regular fa-id-card fa-fade"></i> CAMBIADO-->
+                <div class="formulario__validacion-estado"></div>
               </label>
               <div class="formulario__grupo-input">
                 <input
@@ -123,7 +125,7 @@
                 />
                 <!--Ridley Scott es un nombre de ejemplo-->
                 <!--Validación: error-->
-                <i class="formulario__validacion-estado"></i>
+                <div class="formulario__validacion-estado"></div>
               </div>
               <p class="formulario__input-error">
                 Por favor deja aquí un nombre y/o apellido.
@@ -135,9 +137,9 @@
               <label for="correo" class="formulario__label"
                 >Tu correo electrónico *
                 <!--Validación: éxito-->
-                <i class="fa-solid fa-at fa-fade"></i>
-                <i class="formulario__validacion-estado"></i
-              ></label>
+                <!--<i class="fa-solid fa-at fa-fade"></i> CAMBIADO-->
+                <div class="formulario__validacion-estado"></div>
+              </label>
               <div class="formulario__grupo-input">
                 <input
                   type="email"
@@ -147,7 +149,7 @@
                   placeholder="ridleyscottcreativegroup@rscg.com"
                 />
                 <!--Validación: error-->
-                <i class="formulario__validacion-estado"></i>
+                <div class="formulario__validacion-estado"></div>
               </div>
               <p class="formulario__input-error">Por favor escribe un mail.</p>
             </div>
@@ -157,8 +159,8 @@
               <label for="pais" class="formulario__label"
                 >Tu país *
                 <!--Validación: éxito-->
-                <i class="fa-regular fa-flag fa-fade"></i>
-                <i class="formulario__validacion-estado"></i>
+                <!--<i class="fa-regular fa-flag fa-fade"></i> CAMBIADO-->
+                <div class="formulario__validacion-estado"></div>
               </label>
               <div class="formulario__grupo-input">
                 <input
@@ -169,7 +171,7 @@
                   placeholder="Reino Unido"
                 />
                 <!--Validación: error-->
-                <i class="formulario__validacion-estado"></i>
+                <div class="formulario__validacion-estado"></div>
               </div>
               <p class="formulario__input-error">
                 Por favor indica país de residencia.
@@ -181,8 +183,8 @@
               <label for="telefono" class="formulario__label"
                 >Tu teléfono *
                 <!--Validación: éxito-->
-                <i class="fa-solid fa-phone-volume fa-fade"></i>
-                <i class="formulario__validacion-estado"></i>
+                <!--<i class="fa-solid fa-phone-volume fa-fade"></i> CAMBIADO-->
+                <div class="formulario__validacion-estado"></div>
               </label>
               <div class="formulario__grupo-input">
                 <input
@@ -193,7 +195,7 @@
                   placeholder="442074377426"
                 />
                 <!--Validación: error-->
-                <i class="formulario__validacion-estado"></i>
+                <div class="formulario__validacion-estado"></div>
               </div>
               <p class="formulario__input-error">
                 Por favor deja un teléfono (máx. 14 números).
@@ -203,10 +205,10 @@
             <!--Grupo: Mensaje-->
             <div class="formulario__grupo" id="grupo__mensaje">
               <label for="mensaje" class="formulario__label"
-                >Tu mensaje 
+                >Tu mensaje
                 <!--Validación: éxito-->
-                <i class="fa-regular fa-message fa-fade"></i>
-                <i class="formulario__validacion-estado"></i>
+                <!--<i class="fa-regular fa-message fa-fade"></i> CAMBIADO-->
+                <div class="formulario__validacion-estado"></div>
               </label>
               <div class="formulario__grupo-input">
                 <textarea
@@ -217,7 +219,7 @@
                   placeholder="¿Comentarios o sugerencias?"
                 ></textarea>
                 <!--Validación: error-->
-                <i class="formulario__validacion-estado"></i>
+                <div class="formulario__validacion-estado"></div>
               </div>
               <p class="formulario__input-error">Por favor deja un mensaje.</p>
             </div>
@@ -278,6 +280,5 @@
     </footer>
   </body>
 </html>
-
 
 <!--Versión 01.12.23-->
