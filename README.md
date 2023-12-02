@@ -26,3 +26,6 @@ TPO de CAC:
 
 30.11.23 (ramas 11-13): Introducción de nuevas mejoras en toda la sección de contacto: contact.html, form.css y form.js que incluyen contenido, estructura, legibilidad, organización, mensajes con el usuario, validación, reseteos al completar el envío, alertas. Actualizaciones de seguridad para activar el auto-deploy con Netlify (.env,.gitignore, API key y variables en lugar del key real para Netlify). .gitignore movido a "root", para evitar "data breaches". Se quitó .env del repositorio.
 
+01.12.23: Nuevos ajustes en el formulario de contacto y sus archivos relacionados.
+
+02.12.23: Se elimina del repositorio el archivo dataSensible.js porque su contenido/sentido está contemplado en .env. Se hacen más ajustes en el formulario de contacto. 
