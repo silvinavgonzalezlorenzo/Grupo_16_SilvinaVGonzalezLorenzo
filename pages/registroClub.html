@@ -9,6 +9,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="../assets/css/styles.css" />
+                              
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -70,79 +71,81 @@
     </header>
 
     <main>
-      <h2>Book Club</h2>
-      <h3>Regístrate al club de lectura en inglés</h3>
-      
-      <form name="registroClub" method="POST" netlify>
-
-        <div class="linea">
-          <label for="nombre">Nombre</label>
-          <input
-            type="text"
-            name="nombre"
-            id="nombre"
-            placeholder="Ridley"
-            minlength="3"
-            required
-            maxlength="25"
-            size="25"
-          />
-        </div>
-      
-        <div class="linea">
-          <label for="apellido">Apellido</label>
-          <input
-            type="text"
-            name="apellido"
-            id="apellido"
-            placeholder="Scott"
-            minlength="3"
-            required
-            maxlength="25"
-            size="25"
-          />
-        </div>
-
-        <div class="linea">
-          <label for="tel">Teléfono</label>
-          <input
-            type="tel"
-            name="tel"
-            id="tel"
-            placeholder="044-371-5555"
-            required
-            pattern="4437144445555"
-            required
-            size="25"
-          />
-        </div>
-
-        <div class="linea">
-          <label for="ciudad">Ciudad</label>
-          <input
-            type="text"
-            name="ciudad"
-            id="ciudad"
-            placeholder="London"
-            size="25"
-          />
-        </div>
-
-        <div class="linea">
-          <label for="pais">País</label>
-          <input 
-            type="text" 
-            name="pais" 
-            id="pais" 
-            placeholder="Inglaterra"
-            size="25" 
-            />
-        </div>
+      <div class="contenedorRegistro">  
+        <h2>Book Club</h2>
+        <h3>Regístrate al club de lectura en inglés</h3>
         
-        <p>
-          <button type="submit">Send</button>
-        </p>
-      </form>
+        <form name="registroClub" method="POST" netlify>
+
+          <div class="linea">
+            <label for="nombre">Nombre</label>
+            <input
+              type="text"
+              name="nombre"
+              id="nombre"
+              placeholder="Ridley"
+              minlength="3"
+              required
+              maxlength="25"
+              size="25"
+            />
+          </div>
+      
+          <div class="linea">
+            <label for="apellido">Apellido</label>
+            <input
+              type="text"
+              name="apellido"
+              id="apellido"
+              placeholder="Scott"
+              minlength="3"
+              required
+              maxlength="25"
+              size="25"
+            />
+          </div>
+
+          <div class="linea">
+            <label for="tel">Teléfono</label>
+            <input
+              type="tel"
+              name="tel"
+              id="tel"
+              placeholder="044371775555"
+              required
+              pattern="4437144445555"
+              required
+              size="25"
+            />
+          </div>
+
+          <div class="linea">
+            <label for="ciudad">Ciudad</label>
+            <input
+              type="text"
+              name="ciudad"
+              id="ciudad"
+              placeholder="London"
+              size="25"
+            />
+          </div>
+
+          <div class="linea">
+            <label for="pais">País</label>
+            <input 
+              type="text" 
+              name="pais" 
+              id="pais" 
+              placeholder="Inglaterra"
+              size="25" 
+              />
+          </div>
+          
+          <p>
+            <button type="submit" class="boton">Send</button>
+          </p>
+        </form>
+      </div>
     </main>    
 
     <footer>

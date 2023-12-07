@@ -29,3 +29,5 @@ TPO de CAC:
 01.12.23: Nuevos ajustes en el formulario de contacto y sus archivos relacionados.
 
 02.12.23: Se elimina del repositorio el archivo dataSensible.js porque su contenido/sentido está contemplado en .env. Se hacen más ajustes en el formulario de contacto. 
+
+06.12.23: Actualizaciones en registroClub.html y registroClub.css.
