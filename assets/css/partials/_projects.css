@@ -72,7 +72,7 @@ h3 {
 
 .botón-ver-playlist,
 .botón-all-playlists {
-  /*botoncito para visitar la playlist en cuestión*/
+  /*botoncito para visitar la/s playlist/s*/
   display: block;
   width: 100%; /*la forma de contener el tamaño del botón s/ el contenido*/
   max-width: 180px; /*para limitar el ancho posible*/
