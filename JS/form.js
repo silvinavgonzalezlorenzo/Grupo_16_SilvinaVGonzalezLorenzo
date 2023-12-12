@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Oculta el mensaje de error
         grupo.querySelector('.formulario__input-error').classList.remove('formulario__input-error-activo');
         // Cambia el borde a verde
-        input.style.border = '3px solid rgb(8, 255, 8)';
+        input.style.border = '2px solid rgb(8, 255, 8)';
       } else {
         grupo.classList.remove('formulario__grupo-correcto');
         grupo.classList.add('formulario__grupo-incorrecto');
@@ -102,8 +102,8 @@ document.addEventListener('DOMContentLoaded', function () {
         setTimeout(() => {
           document.getElementById('formulario__mensaje').classList.remove('formulario__mensaje-activo');
         }, 5000);
-        // Muestra la alerta
-        alert('Error: Por favor revisa si completaste bien todos los campos.');
+        // Antes: Mensaje específico. Ahora: integrado con los mensajes "reactivos"
+        //Antes: alert('Error: Por favor revisa si completaste bien todos los campos.');
       }
     });
        
@@ -115,4 +115,4 @@ document.addEventListener('DOMContentLoaded', function () {
     inputMensaje.addEventListener('input', validarFormulario);
   });
   
-// Versión 01.12.23
+// Versión 12.12.23

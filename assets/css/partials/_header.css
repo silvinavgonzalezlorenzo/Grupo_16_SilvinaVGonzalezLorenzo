@@ -4,9 +4,7 @@
   /*top: 0px;*/
   /*left: 0px;*/
   display: flex; /*así el contenedor va mejor*/
-  background-color: var(
-    --bg-color
-  ); /*New 05.11.23: transparent. Antes: var(--bg-color) --> cremita;*/
+  background-color: var(--bg-color); /*rgb(205, 232, 255);*/ 
   align-items: center;
   justify-content: center; /*Antes 05.11.23: space-between --> no me gusta;*/
   padding: 10px 20px; /*antes 02.11.23: 20px 40px;*/
@@ -28,26 +26,19 @@
 .navbar-menu ul {
   /*menú en la barra en general*/
   display: flex;
-  /*New 05.11.23: no parece hacer falta: flex-direction: row;*/
   gap: 35px;
-  /*transition: background-color 0.3s ease; /*No va acá*/
 }
 
 .navbar-menu ul li a {
   /*para los links del menú*/
-  color: var(--primary-color);
-  font-weight: bold; /*new 03.11.23*/
-  text-decoration: none; /*New 05.11.23*/
-  /*transition: color 0.3s ease; /*New 05.11.23: para unificar con los otros hover. No me gusta.*/
+  color: orangered;
+  font-weight: bold; 
+  text-decoration: none; 
 }
-/*El hover para los links en la barra: no lo voy a usar porque cambia mis íconos animados -y me gustan:
-.navbar-menu ul li a:hover {   /*New 05.11.23: para que cambie a este color cuando se lo hoverea
-    color: blue;
-}*/
 
 .texto-ícono {
   /*NEW*/
-  color: orangered; /*DARKBLUE: rgb(0, 0, 139)*/
+  color: orangered; 
   text-align: center;
   font-family: "Roboto", sans-serif;
 }
@@ -60,9 +51,9 @@
   background-color: var(--bg); /*Cuando se haga "sticky", sigue el color*/
 }
 
-/*New 05.11.23: responsive design --> Teóricamente responsives con pantalla rotada también*/
+/*New 05.11.23: responsive design --> Responsivos con pantalla rotada también*/
 
-/*PC ESCRITORIO: ya estaría "user-friendly" con los parámetros de arriba, but...*/
+/*PC ESCRITORIO: "user-friendly"*/
 @media screen and (min-width: 769px) {
   /*Le confirmo el breakpoint*/
 }
@@ -78,4 +69,4 @@
   }   
 }
 /*Nota: el 09.11.23 aprendí sobre MOBILE FIRST (golden rule developer). 
-Los parámetros arriba descriptos son anteriores.*/
+Los parámetros arriba descriptos son anteriores y funcionales a este TP.*/

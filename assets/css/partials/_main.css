@@ -35,14 +35,14 @@ main {
   text-align: center; /*New 11.11.23: centrado del contenido*/
 }
 
-/*New 10.11.23*/
+/*10.11.23*/
 .bio-container-padre {
   display: flex;
-  justify-content: center; /*New 10.11.23*/
+  justify-content: center; /*10.11.23*/
   flex-wrap: wrap;
-  /*justify-content: space-around; /*Antes: space-around p/ mantenerlo en una sola línea; Antes: center*/
+  /*justify-content: space-around; p/ mantenerlo en una sola línea*/
   margin-top: 20px;
-  margin-bottom: 20px; /*new 04.11.23*/
+  margin-bottom: 20px; /*04.11.23*/
 }
 
 /*Nuevo 11.11.23: style para hijos*/
@@ -78,12 +78,12 @@ main {
 .caption-bio {
   text-align: center;
   color: orangered;
-  font-size: 16px;
+  font-size: 15px;
   margin: 5px 0; /*5 arriba, 5 abajo, 0 el resto*/
 }
 
 .botón-about-me {
-  /*New 08.11.23*/
+  /*08.11.23*/
   display: block;
   width: 100%; /*la forma de contener el tamaño del botón s/ el contenido*/
   max-width: 180px; /*para limitar el ancho posible*/
@@ -91,7 +91,7 @@ main {
   font-weight: bold; /*negrita*/
   padding: 5px 10px;
   text-align: center; /*centrado dentro del botón*/
-  margin-top: 0; /*new 10.11.23. Antes: 5%;*/
+  margin-top: 0; /*Antes: 5%;*/
   margin-left: auto; /*centrado horizontal*/
   margin-right: auto; /*centrado horizontal*/
   /*margin-bottom: 5%; /*separación desde el borde ext. del botón con el footer*/
@@ -198,15 +198,6 @@ main {
   font-size: 18px;
   font-weight: bold;
 }
-
-/*vocablo emulando el estilo Merriam-Webster*/
-/*Ahora a cargo de apis.js
-.word, 
-.word p {
-  color: darkblue;
-  font-size: 18px;
-  font-weight: bold;
-}*/
 
 /*API + ANIMACIÓN*/
 /*definición emulando el estilo Merriam-Webster*/

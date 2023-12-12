@@ -1,12 +1,11 @@
 body {
   color: darkblue;
-  /*font-size: 16px;*/
   padding: 20px; /*padding para el body*/
 }
 
 h2 {
   font-size: 25px;
-  padding-top: 20px; /*separación desde header hasta h2*/
+  padding-top: 20px; /*separación desde tope hasta h2*/
 }
 
 .section {
@@ -15,40 +14,35 @@ h2 {
 }
 
 .section-name {
-  /*Antes: skill-header*/
-  margin: 10px 10px 30px 30px; /*antes: 10px 10px 20px 10px; / el primer 30px separa más el 1er título del nav*/
-  color: darkblue; /*new 04.11.23: orangered;*/
-  /*font-size: 18px; /New 04.11.23: achica un poco el tamaño en la sección*/
+  margin: 10px 10px 30px 30px; /*el primer 30px separa más el 1er título del nav*/
+  color: darkblue; 
 }
 
 .image-container {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; /*New 04.11.23: quiero evitar el scroll down en PC*/
-  margin-top: 20px; /*new 04.11.23*/
+  flex-wrap: wrap; /*quiero evitar el scroll down en PC*/
+  margin-top: 20px; 
 }
 
 .image {
   width: calc(33.333% - 20px);
-  height: 150px; /*altura definida para los png*/
+  height: 140px; /*altura definida para los png*/
   margin: 10px;
   text-align: center;
-  background-color: transparent; /*New 04.11.23. Antes: yellow; ivory;*/
-  padding: 10px; /*New 04-11-23: el padding dentro del contenedor / border-radius: p/ borde redondeado, 3px;?*/
-  font-size: 14px; /*reduce tamaño*/
+  background-color: transparent; 
+  padding: 10px; /*el padding dentro del contenedor / border-radius: p/ borde redondeado, 3px;*/
+  font-size: 14px; /*reduce el tamaño*/
 }
 
 .image img {
-  /*New 04.11.23: para que sea responsive*/
+  /*para que sea responsive*/
   max-width: 100%; /*seis imágenes en skills.html*/
   max-height: 100%; /*Así no exceden tamaño del container --> Antes: height: auto;*/
-  /*Before: height: 200px;
-    width: 300px; */
 }
 
 .image-caption {
-  /*New 04.11.23*/
-  color: orangered; /*antes: darkblue;*/
+  color: orangered; 
   font-size: 14px;
 }
 
@@ -75,21 +69,6 @@ h2 {
 }
 
 /*Nota: el 09.11.23 aprendí sobre MOBILE FIRST (golden rule developer). 
-Los parámetros arriba descriptos son anteriores.*/
+Los parámetros arriba descriptos son anteriores y funcionales a este TP.
+Versión actual: 12.12.23*/
 
-/*ANTES 04.11.23:
-.descripcion {
-    color: orangered; /*darkblue: rgb(0, 0, 139)
-    justify-content: center; 
-}
-
-.image-row {
-    display: flex; 
-    justify-content: space-around;
-}
-
-.image-text {    
-    text-align: center;
-    margin: 0 10px;
-}
-*/
