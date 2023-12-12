@@ -27,13 +27,13 @@
 .contenedor-mapa p {
   /*igual que el caption de skills.css*/
   color: orangered; 
-  font-size: 14px;
+  font-size: 15px;
   padding-top: 10px;
 }
 
 .formulario__principal {
   /*Contacto 24 x 7*/
-  max-width: 600px;
+  max-width: 450px;
   width: 100%;
   padding: 30px;
   padding-top: 10px; /*sobreescribe la propiedad anterior: sólo "top"*/
@@ -48,20 +48,19 @@
 .formulario__principal p {
   /*¡Te responderé el mismo día!*/
   color: orangered; 
-  font-size: 14px;
+  font-size: 15px;
   padding-bottom: 10px; /*para separar desde este punto de ref. hacia abajo*/
-  /*font-weight: bold;*/
 }
 
 .formulario {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr; /*campos 100% de ancho*/
   gap: 20px;
 }
 
 .formulario__label {
   display: block; /*block: ocupa el 100%*/
-  font-weight: 700; /*Coloca letras en negrita*/
+  font-weight: 700; /*coloca letras en negrita*/
   padding: 10px;
   cursor: pointer;
 }
@@ -76,7 +75,7 @@
   background: #fff; /*relleno del input*/
   border: 3px solid transparent;
   border-radius: 3px;
-  /*height y line-height es para que el texto quede centrado*/
+  /*height y line-height para que el texto quede centrado*/
   height: 45px;
   line-height: 45px;
   padding: 0 40px 0 10px; /*arriba derecha abajo izquierda*/
@@ -85,9 +84,9 @@
 
 /*Transición cuando se hace click sobre campos a rellenar*/
 .formulario__input:focus {
-  border: 3px solid rgb(8, 255, 8); /*naranja blur para marcar posición -> ok*/
+  border: 2px solid rgb(8, 255, 8); 
   outline: none; /*quita el sobreborde del navegador*/
-  cursor: pointer; /*puntero para marcar*/
+  cursor: pointer; 
 }
 
 /*Mensaje de aviso de error*/
@@ -105,39 +104,33 @@
 /*Icono X configuración*/
 .formulario__validacion-estado {
   position: absolute;
-  right: 10px; /*coloca el ícono dentro del input de der a izq*/
+  right: 10px; /*coloca el ícono dentro del input de derecha a izquierda*/
   bottom: 15px;
   z-index: 100;
   font-size: 16px;
   opacity: 0; /*opacity para que no se muestre*/
 }
 
-#mensaje { /*Texto en el mensaje que escribirá el usuario*/
+/*Texto en el mensaje que escribirá el usuario:*/
+#mensaje { 
+  width: 100%;
+  box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-}
-
-/*Accede a las dos ultimas celdas y las separa*/
-.formulario__mensaje,
-.formulario__enviar {
-  grid-column: span 2;
+  font-size: 14px;
 }
 
 .formulario__mensaje {
-  display: none; /*oculto por defecto*/
+  display: none; /*oculto por defecto
   height: 45px;
   line-height: 45px;
   background-color: rgb(240, 240, 201); 
   padding: 0 15px;
-  border-radius: 3px;
+  border-radius: 3px;*/
 }
+
 /*Mensaje de error para cuando está activo*/
 .formulario__mensaje-activo {
   display: block;
-}
-
-.formulario__mensaje p {
-  /*centra el mensaje de error quitando los bordes*/
-  margin: 0;
 }
 
 .formulario__enviar {
@@ -146,13 +139,13 @@
   align-items: center;
 }
 
-/*Botón "Enviar*/
+/*Botón "Send"*/
 .formulario__btn {
   height: 45px;
   line-height: 45px;
-  width: 200px; /*New 29.11.23*/
+  max-width: 200px; /*10.12.23*/
   margin-top: 35px;
-  background-color: white; /*Antes: orange*/
+  background-color: white; 
   color: orangered; 
   font-size: 16px;
   font-weight: bold;
@@ -169,7 +162,7 @@
 
 .formulario__mensaje-exito {
   font-size: 14px;
-  color: orangered; /*FLUOR GREEN: del borde de cada casilla rellenada*/
+  color: orangered; 
   font-weight: bold;
   font-family: 'Roboto', sans serif;
   display: none;
@@ -184,32 +177,46 @@
   color: rgb(8, 255, 8); /*verde flúor*/
   opacity: 1;
 }
-/*Grupo-incorrecto: a definirse en JS:
-.formulario__grupo-incorrecto .formulario__label {
-  color: red;
-}
-
-.formulario__grupo-incorrecto .formulario__validacion-estado {
-  color: red;
-  opacity: 1;
-}*/
 
 .formulario__grupo-incorrecto .formulario__input {
-  border: 3px solid transparent; /*sin borde naranja para los campos con error*/
+  border: 3px solid transparent; /*sin borde para los campos con error*/
 }
 
-/*Responsive - media queries*/
-/*MOBILE y/o otros "small devices" (tamaño "inclusivo" más difundido*/
+/*Responsive - media querries*/
+/*Escritorio:*/
+@media (min-width: 769px) {
+  .formulario {
+    grid-template-columns: 1fr; /*1 columna*/
+  }
+
+  #mensaje {
+    grid-column: span 1; /*ancho de una columna*/
+    width: 100%;
+  }
+
+  .formulario__mensaje,
+  .formulario__enviar {
+    grid-column: span 1; /*reseteo del grid*/
+  }
+
+  .formulario__btn {
+    width: 50%; /*ancho para el botón*/
+    margin-top: 20px; /*ajuste de margen*/
+  }
+}
+
+/*MOBILE y/o otros "small devices" (tamaño "inclusivo" más difundido)*/
 @media (max-width: 768px) {
   .formulario {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /*una columna*/
   }
+
   .formulario__mensaje,
   .formulario__enviar {
     grid-column: 1;
   }
   .formulario__btn {
-    width: 80%;
-    margin-top: 20px;
+    width: 60%;
+    margin-top: 20px; /*ajuste de margen*/
   }
 }

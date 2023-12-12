@@ -7,10 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const word = "algorithm"; // Sostenible: así podré cambiar la palabra cada vez que quiera
   definitionContainer.innerHTML = `<p style="font-weight: bold; font-size: 18px;">from The Merriam-Webster Dictionary API: ${word}</p>`;
 
-  // Demorar la visibilidad del fetch en 5000 milisegundos=5s
+  // Demora la visibilidad del fetch en 3000 milisegundos=3s
   setTimeout(() => {
     fetchWordDefinition(word);
-  }, 5000);
+  }, 3000);
 });
 // Función para realizar la solicitud a la API
 async function fetchWordDefinition(word) {
@@ -60,3 +60,5 @@ function displayError() {
   // Mostrar un mensaje genérico en caso de error
   definitionContainer.innerHTML += "<p>Definición no disponible.</p>";
 }
+
+// Versión actual: 12.12.23
